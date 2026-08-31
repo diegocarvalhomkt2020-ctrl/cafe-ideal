@@ -1,0 +1,103 @@
+{
+  "_nota": "Produtos reais pesquisados na Amazon (lista de mais vendidos em Cafeteiras) e contras reais pesquisados no Reclame Aqui / avaliações de compradores. Faltam gerar as imagens.",
+  "categorias": [
+    {
+      "id": "cafeteira",
+      "nome": "Cafeteira elétrica",
+      "tempoEstimado": "15 a 25 min",
+      "descricao": "Cafeteira errada é café ruim todo dia, ou uma jarra que racha em duas semanas. Do mais barato ao mais completo, com o defeito real de cada uma.",
+      "produtos": [
+        {
+          "id": "CAFE-CAFET-01",
+          "nome": "Cafeteira Elétrica Electrolux 15 Xícaras Efficient (ECM10)",
+          "imagem": "/images/produtos/electrolux-ecm10-cafeteira-filtro.png",
+          "selo": "Mais barata",
+          "precoMin": 100,
+          "precoMax": 115,
+          "nota": 4.6,
+          "avaliacoes": 3971,
+          "pros": [
+            "Preço bem baixo pra uma cafeteira de marca conhecida",
+            "Base aquecedora mantém o café quente depois de pronto",
+            "Nota 4,6 com quase 4 mil avaliações"
+          ],
+          "contra": "A jarra de vidro tem vários relatos de rachar ou quebrar com poucos usos — inclusive um caso de rachar na primeira semana. O sistema corta-pingos também falha em alguns relatos.",
+          "paraQuem": "Pra quem quer o menor investimento pra começar, tratando a jarra de vidro com cuidado extra",
+          "linkAmazon": "https://www.amazon.com.br/dp/B09CC72K1X?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CAFE-CAFET-02",
+          "nome": "Cafeteira Elétrica Electrolux Inox 38 Xícaras com Timer (ECM30)",
+          "imagem": "/images/produtos/electrolux-ecm30-cafeteira-inox-timer.png",
+          "selo": "Mais completa",
+          "precoMin": 265,
+          "precoMax": 285,
+          "nota": 4.8,
+          "avaliacoes": 3444,
+          "pros": [
+            "Maior capacidade da lista: 38 xícaras de uma vez",
+            "Timer programável e painel digital, dá pra deixar pronta pra hora que acordar",
+            "Nota 4,8, a mais alta entre as opções de filtro"
+          ],
+          "contra": "Existem relatos de a cafeteira parar de esquentar depois de alguns meses de uso, e pelo menos um relato de a superfície começar a descascar com poucos usos.",
+          "paraQuem": "Pra quem bebe bastante café ou tem casa cheia e quer timer programável, sabendo que a durabilidade variou entre compradores",
+          "linkAmazon": "https://www.amazon.com.br/dp/B09CC3QFDX?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CAFE-CAFET-03",
+          "nome": "3 Corações Cafeteira Espresso e Multibebida Passione",
+          "imagem": "/images/produtos/3coracoes-passione-cafeteira-capsula.png",
+          "selo": "Multibebida",
+          "precoMin": 375,
+          "precoMax": 400,
+          "nota": 4.6,
+          "avaliacoes": 3441,
+          "pros": [
+            "Faz espresso e outras bebidas em cápsula, não só café coado",
+            "Marca 3 Corações, bem conhecida no Brasil",
+            "Nota 4,6 com mais de 3,4 mil avaliações"
+          ],
+          "contra": "Vários compradores relatam vazamento de água pelo reservatório de cápsulas, às vezes acumulando resíduo e cheiro. A máquina também não tem botão simples de ligar/desligar — precisa apertar dois botões ao mesmo tempo.",
+          "paraQuem": "Pra quem quer variar entre café e outras bebidas em cápsula, e não se incomoda de lidar com o vazamento relatado",
+          "linkAmazon": "https://www.amazon.com.br/dp/B08S1HB8G9?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CAFE-CAFET-04",
+          "nome": "Cafeteira Espresso Nespresso Essenza Mini",
+          "imagem": "/images/produtos/nespresso-essenza-mini-cafeteira.png",
+          "selo": "Mais compacta",
+          "precoMin": 520,
+          "precoMax": 560,
+          "nota": 4.8,
+          "avaliacoes": 2652,
+          "pros": [
+            "Compacta, ocupa pouco espaço na bancada",
+            "Marca premium com extração consistente, segundo a maioria das avaliações",
+            "Nota 4,8, uma das mais altas da lista"
+          ],
+          "contra": "O compartimento de descarte de cápsulas usadas é pequeno — cabem só 4 a 5 cápsulas antes de precisar esvaziar. Também há relatos de vazamento de água depois de pouco tempo de uso.",
+          "paraQuem": "Pra quem tem pouco espaço e prioriza qualidade de extração, aceitando esvaziar o compartimento de cápsulas com frequência",
+          "linkAmazon": "https://www.amazon.com.br/dp/B099ZJQXMF?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CAFE-CAFET-05",
+          "nome": "Oster Cafeteira com Jarra Inox 1,2L (OCAF650)",
+          "imagem": "/images/produtos/oster-ocaf650-cafeteira-jarra-inox.png",
+          "selo": "Mais avaliada",
+          "precoMin": 200,
+          "precoMax": 250,
+          "nota": 4.6,
+          "avaliacoes": 5263,
+          "pros": [
+            "A mais avaliada da lista, com mais de 5 mil avaliações",
+            "Jarra de inox, não quebra como a de vidro de outros modelos",
+            "Design simples, fácil de usar e limpar"
+          ],
+          "contra": "A própria Oster reconhece no manual do produto que a jarra vaza café se você servir rápido ou se ela estiver mais da metade cheia — o manual chega a instruir \"sirva o café devagar para evitar vazamento pelo bico da jarra\".",
+          "paraQuem": "Pra quem quer jarra durável (inox, não vidro) e não se importa em servir o café mais devagar",
+          "linkAmazon": "https://www.amazon.com.br/dp/B002NLADVU?tag=dicasinteli05-20"
+        }
+      ]
+    }
+  ]
+}

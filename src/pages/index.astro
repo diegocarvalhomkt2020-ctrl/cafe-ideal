@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Café Ideal",
+  "url": Astro.site?.toString(),
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Café Ideal",
+  "url": Astro.site?.toString(),
+};
+---
+<Layout
+  title="Escolha a cafeteira certa, sem chute"
+  description="Comparativos honestos de cafeteira, com preço, nota e o defeito real de cada modelo, pesquisado direto no Reclame Aqui e nas avaliações de quem já comprou."
+  image="/images/produtos/electrolux-ecm10-cafeteira-filtro.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+
+  <h1>Escolha a cafeteira certa, sem chute</h1>
+  <p>
+    Comparativos separados por tipo de produto, sempre com o defeito real
+    de cada um: não é sobre a cafeteira mais bonita, é sobre a que não vai
+    te dar dor de cabeça.
+  </p>
+
+  <section class="como-funciona">
+    <h2>Como funciona</h2>
+    <p>
+      Cada categoria tem uma lista completa (o guia principal) e conteúdos
+      menores que recortam essa lista de formas diferentes: por erro comum,
+      por orçamento, comparativo direto. Todo defeito citado vem de
+      avaliação real de comprador ou reclamação registrada, nunca inventado.
+    </p>
+  </section>
+
+  <section class="nichos">
+    <h2>Cafeteira</h2>
+    <div class="nicho-links">
+      <a class="nicho-card" href="/cafeteira/">
+        <strong>Cafeteira elétrica: qual escolher</strong>
+        <span>Da mais barata à mais completa, com preço, nota e o defeito real de cada uma.</span>
+      </a>
+      <a class="nicho-card" href="/cafeteira/erros-comuns/">
+        <strong>Erros comuns</strong>
+        <span>Os erros que mais fazem a cafeteira decepcionar (e como evitar cada um).</span>
+      </a>
+      <a class="nicho-card" href="/cafeteira/por-orcamento/">
+        <strong>Por orçamento</strong>
+        <span>As mesmas cafeteiras separadas por faixa de preço.</span>
+      </a>
+      <a class="nicho-card" href="/cafeteira/comparativo-top3/">
+        <strong>Comparativo Top 3</strong>
+        <span>As 3 mais avaliadas, lado a lado, pra comparar antes de decidir.</span>
+      </a>
+    </div>
+  </section>
+
+  <style>
+    .como-funciona {
+      margin: 2rem 0;
+      padding: 1rem 1.25rem;
+      background: var(--cor-superficie);
+      border: 1px solid var(--cor-borda);
+      border-radius: 10px;
+    }
+    .como-funciona h2 { font-size: 1rem; margin: 0 0 0.4rem; }
+    .como-funciona p { margin: 0; font-size: 0.9rem; color: var(--cor-texto-suave); }
+    .nichos { margin: 2rem 0; }
+    .nichos h2 { font-size: 1.1rem; margin: 0 0 0.9rem; }
+    .nicho-links { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .nicho-card {
+      display: block;
+      border: 1px solid var(--cor-borda);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      text-decoration: none;
+      color: var(--cor-texto);
+      background: var(--cor-superficie);
+    }
+    .nicho-card strong { display: block; margin-bottom: 0.35rem; color: var(--cor-acento); }
+    .nicho-card span { font-size: 0.88rem; color: var(--cor-texto-suave); }
+  </style>
+</Layout>
