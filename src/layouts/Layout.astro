@@ -27,7 +27,13 @@ const imagemAbsoluta = new URL(image || '/images/produtos/electrolux-ecm10-cafet
     <meta name="twitter:image" content={imagemAbsoluta} />
 
     <!-- Google tag (gtag.js) -->
-    <!-- TODO: substituir pelo ID real do GA4 quando o usuário criar a propriedade -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHN2XLEV69"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WHN2XLEV69');
+    </script>
   </head>
   <body>
     <header class="topo">
