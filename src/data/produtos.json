@@ -98,6 +98,104 @@
           "linkAmazon": "https://www.amazon.com.br/dp/B002NLADVU?tag=dicasinteli05-20"
         }
       ]
+    },
+    {
+      "id": "moedor-de-cafe",
+      "nome": "Moedor de café elétrico",
+      "tempoEstimado": "5 a 10 min",
+      "descricao": "Café moído na hora rende mais sabor que pó de pacote — mas moedor errado significa pó irregular, limpeza chata ou moagem que não presta pro seu método de preparo.",
+      "produtos": [
+        {
+          "id": "CAFE-MOEDOR-01",
+          "nome": "Cadence Moedor de Café di Grano",
+          "imagem": null,
+          "selo": "Mais avaliado",
+          "precoMin": 90,
+          "precoMax": 105,
+          "nota": 4.7,
+          "avaliacoes": 3822,
+          "pros": [
+            "Potente: moagem consistente em segundos, boa pra filtro ou coador",
+            "Menos barulho que outros modelos, segundo comparação de quem já trocou de moedor",
+            "Marca conhecida, quase 3,8 mil avaliações reais"
+          ],
+          "contra": "Não dá pra lavar com água — só limpar por dentro com pincel ou escova — e a moagem não fica fina o bastante pra espresso, segundo mais de uma avaliação: funciona bem só pra coador e filtro.",
+          "paraQuem": "Pra quem faz café coado ou de filtro no dia a dia e não precisa de pó fino de espresso",
+          "linkAmazon": "https://www.amazon.com.br/dp/B076HZQQ9X?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CAFE-MOEDOR-02",
+          "nome": "Oster Moedor de Café Elétrico Inox (OMDR110)",
+          "imagem": null,
+          "selo": "Marca conhecida",
+          "precoMin": 155,
+          "precoMax": 175,
+          "nota": 4.5,
+          "avaliacoes": 345,
+          "pros": [
+            "Moagem elogiada como consistente e rápida — uma colher de sopa em poucos segundos",
+            "Fácil de usar, recomendado por quem já testou outras marcas antes",
+            "Também serve pra triturar linhaça e outros grãos secos, não só café"
+          ],
+          "contra": "O copo onde o pó cai não sai pra lavar — só dá pra limpar por dentro com pano ou escova, segundo avaliação real.",
+          "paraQuem": "Pra quem quer marca conhecida e não se importa em limpar sem remover o copo",
+          "linkAmazon": "https://www.amazon.com.br/dp/B0FLZPJYYR?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CAFE-MOEDOR-03",
+          "nome": "Hamilton Beach Moedor de Café Ajustável",
+          "imagem": null,
+          "selo": "Mais completo",
+          "precoMin": 300,
+          "precoMax": 330,
+          "nota": 4.7,
+          "avaliacoes": 5863,
+          "pros": [
+            "Moagem realmente ajustável (vários níveis, mais opções do que o anunciado no manual, segundo review detalhada)",
+            "Câmara de moagem removível pra lavar — diferencial que os outros moedores da lista não têm",
+            "Desliga sozinho ao terminar, com 3 anos de garantia"
+          ],
+          "contra": "A tampa acrílica com trava de segurança é apontada como difícil de fechar direito por parte dos compradores (relato marcado como útil por 60 pessoas) — o moedor só liga com a trava encaixada certinho, o que exige um pouco de prática no início.",
+          "paraQuem": "Pra quem quer controle real de moagem (filtro, prensa francesa, espresso) e não se importa em pegar o jeito da trava",
+          "linkAmazon": "https://www.amazon.com.br/dp/B07B84G8WX?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CAFE-MOEDOR-04",
+          "nome": "Philco Moedor de Café Perfect Coffee",
+          "imagem": null,
+          "selo": "Melhor custo-benefício",
+          "precoMin": 140,
+          "precoMax": 160,
+          "nota": 4.6,
+          "avaliacoes": 1243,
+          "pros": [
+            "Moagem homogênea e rápida, elogiada em várias avaliações",
+            "Durabilidade comprovada: relato real de 3 anos de uso sem problema",
+            "Preço equilibrado pra quem quer marca nacional confiável"
+          ],
+          "contra": "Não tem ajuste de moagem (é moedor de lâmina simples, não de rebarba) e a limpeza incomoda: a base não desconecta do motor, só dá pra passar pano — e mais de um comprador reclama do barulho na hora de moer.",
+          "paraQuem": "Pra quem quer um moedor simples e durável, sem precisar de ajuste fino de moagem",
+          "linkAmazon": "https://www.amazon.com.br/dp/B076HRX53J?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CAFE-MOEDOR-05",
+          "nome": "Moedor de Café Elétrico Inox 200W (compacto)",
+          "imagem": null,
+          "selo": "Mais barato",
+          "precoMin": 38,
+          "precoMax": 48,
+          "nota": 4.5,
+          "avaliacoes": 25,
+          "pros": [
+            "Rápido pra moer, aprovado por quem só queria testar sem gastar muito",
+            "Chega bem embalado e em bom estado, segundo relatos",
+            "Potência declarada de 200W, suficiente pra uso ocasional"
+          ],
+          "contra": "Tem relato real de superaquecimento e fumaça já no primeiro uso (\"se continuasse tentando, com certeza iria queimar\") — é o produto mais barato da lista e também o com menos avaliações (25) pra confirmar durabilidade a longo prazo. Um comprador também notou que o produto chega menor do que a foto do anúncio sugere.",
+          "paraQuem": "Pra quem quer testar gastando pouco, usando com moderação e sem forçar moagem contínua",
+          "linkAmazon": "https://www.amazon.com.br/dp/B0H7NP789X?tag=dicasinteli05-20"
+        }
+      ]
     }
   ]
 }

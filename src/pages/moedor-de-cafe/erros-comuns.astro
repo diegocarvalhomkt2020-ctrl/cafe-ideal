@@ -1,0 +1,76 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Moedor de café", item: "https://cafe.dicasinteligentes.com/moedor-de-cafe/" },
+    { "@type": "ListItem", position: 3, name: "Erros comuns", item: "https://cafe.dicasinteligentes.com/moedor-de-cafe/erros-comuns/" },
+  ],
+};
+
+const erros = [
+  {
+    titulo: "Comprar moedor de lâmina esperando moagem de espresso",
+    texto: "Moedor de lâmina simples (Cadence, Oster, Philco) faz um pó irregular, bom pra filtro e coador — mas não chega no ponto fino e uniforme que espresso exige. Se você quer espresso de verdade, só um moedor de rebarba ajustável resolve.",
+  },
+  {
+    titulo: "Não checar se dá pra remover a câmara pra lavar",
+    texto: "Na maioria dos moedores de lâmina, o copo onde o pó cai não sai do aparelho — só dá pra limpar por dentro com pano ou escova. Se limpeza fácil for prioridade, vale pagar mais por um modelo com câmara removível.",
+  },
+  {
+    titulo: "Forçar moagem contínua num moedor barato",
+    texto: "Moedor de entrada tem motor mais fraco, e usar sem pausa pode superaquecer — já teve relato real de fumaça no primeiro uso num modelo mais barato. Moa em ciclos curtos, com pausa entre eles, principalmente nos primeiros usos.",
+  },
+  {
+    titulo: "Ignorar a voltagem (127V x 220V) na hora de comprar",
+    texto: "Assim como cafeteira, moedor elétrico geralmente não é bivolt. Comprar a voltagem errada é motivo comum de \"não liga\" que na verdade não é defeito do produto.",
+  },
+];
+---
+<Layout
+  title="Erros comuns escolhendo moedor de café"
+  description="Os erros que mais fazem o moedor de café decepcionar — moagem errada, limpeza difícil, voltagem errada e outros — com o que evitar em cada caso."
+>
+  <p><a href="/moedor-de-cafe/">← Moedor de café elétrico</a></p>
+  <h1>Erros comuns escolhendo moedor de café</h1>
+  <p class="atualizado">Atualizado em agosto de 2026</p>
+
+  <p>
+    A maioria das reclamações sobre moedor de café não é sobre o aparelho
+    ser ruim — é sobre escolher o tipo errado pro seu método de preparo. Os
+    erros abaixo são os que mais aparecem em avaliação real de comprador.
+  </p>
+
+  <section class="erros">
+    {erros.map((erro, i) => (
+      <div class="erro-item">
+        <h2>{i + 1}. {erro.titulo}</h2>
+        <p>{erro.texto}</p>
+      </div>
+    ))}
+  </section>
+
+  <p class="cta-final">
+    Quer ver os produtos reais que pesquisamos?
+    <a href="/moedor-de-cafe/">Volte pro guia completo →</a>
+  </p>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .atualizado { color: var(--cor-texto-suave); font-size: 0.9rem; }
+    .erros { margin: 2rem 0; }
+    .erro-item { margin-bottom: 1.75rem; }
+    .erro-item h2 { font-size: 1.1rem; margin: 0 0 0.4rem; }
+    .erro-item p { margin: 0; color: var(--cor-texto-suave); }
+    .cta-final {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cor-borda);
+      font-weight: 600;
+    }
+  </style>
+</Layout>
