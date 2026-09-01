@@ -1,5 +1,5 @@
 {
-  "_nota": "Produtos reais pesquisados na Amazon (lista de mais vendidos em Cafeteiras) e contras reais pesquisados no Reclame Aqui / avaliações de compradores. Faltam gerar as imagens.",
+  "_nota": "Produtos reais pesquisados na Amazon (lista de mais vendidos) e contras reais pesquisados no Reclame Aqui / avaliações de compradores. Todas as fotos ativadas.",
   "categorias": [
     {
       "id": "cafeteira",
@@ -108,7 +108,7 @@
         {
           "id": "CAFE-MOEDOR-01",
           "nome": "Cadence Moedor de Café di Grano",
-          "imagem": null,
+          "imagem": "/images/produtos/cadence-di-grano-moedor-cafe.png",
           "selo": "Mais avaliado",
           "precoMin": 90,
           "precoMax": 105,
@@ -126,7 +126,7 @@
         {
           "id": "CAFE-MOEDOR-02",
           "nome": "Oster Moedor de Café Elétrico Inox (OMDR110)",
-          "imagem": null,
+          "imagem": "/images/produtos/oster-omdr110-moedor-cafe-inox.png",
           "selo": "Marca conhecida",
           "precoMin": 155,
           "precoMax": 175,
@@ -144,7 +144,7 @@
         {
           "id": "CAFE-MOEDOR-03",
           "nome": "Hamilton Beach Moedor de Café Ajustável",
-          "imagem": null,
+          "imagem": "/images/produtos/hamilton-beach-moedor-cafe-ajustavel.png",
           "selo": "Mais completo",
           "precoMin": 300,
           "precoMax": 330,
@@ -162,7 +162,7 @@
         {
           "id": "CAFE-MOEDOR-04",
           "nome": "Philco Moedor de Café Perfect Coffee",
-          "imagem": null,
+          "imagem": "/images/produtos/philco-perfect-coffee-moedor-cafe.png",
           "selo": "Melhor custo-benefício",
           "precoMin": 140,
           "precoMax": 160,
@@ -180,7 +180,7 @@
         {
           "id": "CAFE-MOEDOR-05",
           "nome": "Moedor de Café Elétrico Inox 200W (compacto)",
-          "imagem": null,
+          "imagem": "/images/produtos/moedor-cafe-compacto-inox-200w.png",
           "selo": "Mais barato",
           "precoMin": 38,
           "precoMax": 48,
