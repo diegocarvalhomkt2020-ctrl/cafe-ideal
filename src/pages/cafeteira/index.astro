@@ -18,15 +18,15 @@ const breadcrumbSchema = {
 const faq = [
   {
     pergunta: "Cafeteira de cápsula ou de filtro, qual vale mais a pena?",
-    resposta: "Depende do uso. Filtro (Electrolux ECM10/ECM30, Oster OCAF650) sai mais barato por xícara e serve bem quem bebe bastante café por dia. Cápsula (Nespresso Essenza Mini, 3 Corações Passione) custa mais por dose, mas é mais rápida e não exige medir pó — compensa pra quem bebe pouco ou quer variar o tipo de bebida.",
+    resposta: "Depende do uso. Filtro (Electrolux ECM10/ECM30, Oster OCAF650) sai mais barato por xícara e serve bem quem bebe bastante café por dia. Cápsula (Nespresso Essenza Mini, 3 Corações Passione) custa mais por dose, mas é mais rápida e não exige medir pó. Compensa pra quem bebe pouco ou quer variar o tipo de bebida.",
   },
   {
     pergunta: "Jarra de vidro ou inox, qual dura mais?",
-    resposta: "Inox, sem dúvida — é o motivo do modelo Oster OCAF650 (jarra inox) ter tanta avaliação positiva mesmo com o problema de vazamento ao servir. Jarra de vidro (como a do Electrolux ECM10) tem vários relatos reais de rachar ou quebrar com pouco uso.",
+    resposta: "Inox, sem dúvida. É o motivo do modelo Oster OCAF650 (jarra inox) ter tanta avaliação positiva mesmo com o problema de vazamento ao servir. Jarra de vidro (como a do Electrolux ECM10) tem vários relatos reais de rachar ou quebrar com pouco uso.",
   },
   {
     pergunta: "Vale a pena pagar mais caro numa cafeteira?",
-    resposta: "Só se o recurso extra (timer, painel digital, cápsula) resolver um problema real seu. A cafeteira mais barata da lista (Electrolux ECM10, ~R$110) tem nota tão boa quanto as mais caras — a diferença de preço aqui é sobre recurso, não sobre qualidade do café.",
+    resposta: "Só se o recurso extra (timer, painel digital, cápsula) resolver um problema real seu. A cafeteira mais barata da lista (Electrolux ECM10, ~R$110) tem nota tão boa quanto as mais caras. A diferença de preço aqui é sobre recurso, não sobre qualidade do café.",
   },
 ];
 
@@ -50,7 +50,7 @@ const faqSchema = {
   <p class="atualizado">Todos os produtos abaixo foram pesquisados na Amazon (lista de mais vendidos), com preço, nota e avaliações reais. Fotos ainda em produção.</p>
 
   <p>
-    Cafeteira ruim não é sobre não fazer café — é sobre jarra que racha,
+    Cafeteira ruim não é sobre não fazer café, é sobre jarra que racha,
     vazamento na hora de servir, ou parar de esquentar depois de alguns
     meses. Os produtos abaixo estão em ordem de preço: da mais barata pra
     testar, até a mais completa pra quem já sabe o que quer.
@@ -61,7 +61,7 @@ const faqSchema = {
     <p>
       Nenhuma cafeteira entra nessa lista sem um defeito real declarado
       (bloco "Vale saber" em cada card), pesquisado em avaliação de
-      comprador ou reclamação registrada — nunca inventado. Preço sempre em
+      comprador ou reclamação registrada, nunca inventado. Preço sempre em
       faixa, nunca fixo.
     </p>
   </section>
@@ -114,7 +114,7 @@ const faqSchema = {
     <p>
       A diferença de preço entre a mais barata (Electrolux ECM10, ~R$110) e
       a mais cara (Nespresso Essenza Mini, ~R$540) não é sobre qualidade do
-      café — as duas têm nota alta. É sobre recurso: mais capacidade, timer,
+      café, as duas têm nota alta. É sobre recurso: mais capacidade, timer,
       cápsula em vez de pó. Se você só quer café bom todo dia sem frescura,
       a mais barata resolve. Só vale pagar mais se o recurso específico
       (timer, cápsula, capacidade) resolver um problema real seu.
@@ -176,7 +176,17 @@ const faqSchema = {
       white-space: nowrap;
     }
     .categoria { margin-bottom: 2.5rem; padding-top: 0.5rem; }
-    .honestidade, .faq {
+    .honestidade {
+      margin: 2.5rem 0;
+      padding: 1.5rem 1.75rem;
+      background: var(--cor-superficie);
+      border: 1px solid var(--cor-borda);
+      border-left: 4px solid var(--cor-vale-saber);
+      border-radius: 10px;
+    }
+    .honestidade h2 { margin: 0 0 0.75rem; font-size: 1.15rem; }
+    .honestidade p { margin: 0; color: var(--cor-texto-suave); }
+    .faq {
       margin-top: 2.5rem;
       padding-top: 1.5rem;
       border-top: 1px solid var(--cor-borda);

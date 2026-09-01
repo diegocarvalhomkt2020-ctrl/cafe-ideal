@@ -18,15 +18,15 @@ const breadcrumbSchema = {
 const faq = [
   {
     pergunta: "Moedor de lâmina ou de rebarba (ajustável), qual escolher?",
-    resposta: "Lâmina (Cadence, Oster, Philco) é mais barato e resolve bem café coado ou de filtro. Rebarba ajustável (Hamilton Beach) custa mais, mas dá controle real sobre o ponto da moagem — vale a diferença se você usa prensa francesa, espresso ou é exigente com consistência.",
+    resposta: "Lâmina (Cadence, Oster, Philco) é mais barato e resolve bem café coado ou de filtro. Rebarba ajustável (Hamilton Beach) custa mais, mas dá controle real sobre o ponto da moagem. Vale a diferença se você usa prensa francesa, espresso ou é exigente com consistência.",
   },
   {
     pergunta: "Vale a pena moer o próprio grão em vez de comprar pó pronto?",
-    resposta: "Sim, pro sabor: café perde aroma rápido depois de moído, então moer na hora rende uma xícara bem mais encorpada. A troca é limpeza extra — nenhum moedor da lista lava tudo com facilidade, então prepare-se pra usar escova ou pano com frequência.",
+    resposta: "Sim, pro sabor: café perde aroma rápido depois de moído, então moer na hora rende uma xícara bem mais encorpada. A troca é limpeza extra. Nenhum moedor da lista lava tudo com facilidade, então prepare-se pra usar escova ou pano com frequência.",
   },
   {
     pergunta: "Moedor barato aguenta uso diário?",
-    resposta: "Os de marca conhecida (Cadence, Oster, Philco) têm milhares de avaliações confirmando uso prolongado. Já o mais barato da lista tem só 25 avaliações e um relato real de superaquecimento no primeiro uso — funciona, mas é mais arriscado pra quem mói café todo dia.",
+    resposta: "Os de marca conhecida (Cadence, Oster, Philco) têm milhares de avaliações confirmando uso prolongado. Já o mais barato da lista tem só 25 avaliações e um relato real de superaquecimento no primeiro uso. Funciona, mas é mais arriscado pra quem mói café todo dia.",
   },
 ];
 
@@ -49,7 +49,7 @@ const faqSchema = {
   <p class="atualizado">Todos os produtos abaixo foram pesquisados na Amazon (lista de mais vendidos), com preço, nota e avaliações reais. Fotos ainda em produção.</p>
 
   <p>
-    Café moído na hora rende mais sabor do que pó de pacote — mas moedor
+    Café moído na hora rende mais sabor do que pó de pacote, mas moedor
     errado significa pó irregular, limpeza chata ou moagem que não serve
     pro seu método de preparo. Os produtos abaixo estão em ordem de preço:
     do mais simples pra testar, até o ajustável pra quem já sabe o que quer.
@@ -59,7 +59,7 @@ const faqSchema = {
     <h2>Como escolhemos</h2>
     <p>
       Nenhum moedor entra nessa lista sem um defeito real declarado (bloco
-      "Vale saber" em cada card), pesquisado em avaliação de comprador —
+      "Vale saber" em cada card), pesquisado em avaliação de comprador,
       nunca inventado. Preço sempre em faixa, nunca fixo.
     </p>
   </section>
@@ -111,11 +111,11 @@ const faqSchema = {
     <h2>Onde vale gastar mais, onde não faz diferença</h2>
     <p>
       A diferença entre o mais barato (~R$40) e o mais completo (~R$315) não
-      é sobre "moer café" — todos moem. É sobre controle e durabilidade: o
+      é sobre "moer café", todos moem. É sobre controle e durabilidade: o
       ajustável (Hamilton Beach) dá níveis reais de moagem e câmara
       removível pra lavar, o que importa pra quem usa prensa francesa ou
       espresso. Pra café coado do dia a dia, qualquer um dos moedores de
-      lâmina já resolve — o barato só é mais arriscado em uso muito
+      lâmina já resolve. O barato só é mais arriscado em uso muito
       frequente.
     </p>
   </section>
@@ -175,7 +175,17 @@ const faqSchema = {
       white-space: nowrap;
     }
     .categoria { margin-bottom: 2.5rem; padding-top: 0.5rem; }
-    .honestidade, .faq {
+    .honestidade {
+      margin: 2.5rem 0;
+      padding: 1.5rem 1.75rem;
+      background: var(--cor-superficie);
+      border: 1px solid var(--cor-borda);
+      border-left: 4px solid var(--cor-vale-saber);
+      border-radius: 10px;
+    }
+    .honestidade h2 { margin: 0 0 0.75rem; font-size: 1.15rem; }
+    .honestidade p { margin: 0; color: var(--cor-texto-suave); }
+    .faq {
       margin-top: 2.5rem;
       padding-top: 1.5rem;
       border-top: 1px solid var(--cor-borda);
