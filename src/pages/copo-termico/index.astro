@@ -1,9 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ProdutoCard from '../../components/ProdutoCard.astro';
-import dados from '../../data/produtos.json';
+import dados from '../../data/produtos-copo-termico.json';
 
-const categoria = dados.categorias.find((c) => c.id === 'moedor-de-cafe');
+const categoria = dados.categorias.find((c) => c.id === 'copo-termico');
 const produtos = categoria.produtos;
 
 const breadcrumbSchema = {
@@ -11,22 +11,22 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
-    { "@type": "ListItem", position: 2, name: "Moedor de café", item: "https://cafe.dicasinteligentes.com/moedor-de-cafe/" },
+    { "@type": "ListItem", position: 2, name: "Copo térmico", item: "https://cafe.dicasinteligentes.com/copo-termico/" },
   ],
 };
 
 const faq = [
   {
-    pergunta: "Moedor de lâmina ou de rebarba (ajustável), qual escolher?",
-    resposta: "Lâmina (Cadence, Oster, Philco) é mais barato e resolve bem café coado ou de filtro. Rebarba ajustável (Hamilton Beach) custa mais, mas dá controle real sobre o ponto da moagem. Vale a diferença se você usa prensa francesa, espresso ou é exigente com consistência.",
+    pergunta: "Copo térmico realmente mantém o café quente por horas?",
+    resposta: "Mantém, mas não pelo mesmo tempo que uma garrafa térmica de verdade. O segredo é a parede dupla a vácuo: sem ela, é só um copo de inox comum, que esfria quase tão rápido quanto um copo qualquer. Os 3 produtos desta lista têm parede dupla de verdade.",
   },
   {
-    pergunta: "Vale a pena moer o próprio grão em vez de comprar pó pronto?",
-    resposta: "Sim, pro sabor: café perde aroma rápido depois de moído, então moer na hora rende uma xícara bem mais encorpada. A troca é limpeza extra. Nenhum moedor da lista lava tudo com facilidade, então prepare-se pra usar escova ou pano com frequência.",
+    pergunta: "Copo grande (500-600ml) ou xícara pequena (160ml), qual escolher?",
+    resposta: "Depende do uso. Se é pra levar café na rua ou no carro, o copo de 500-600ml compensa mais, rende mais líquido e tem tampa anti-vazamento. Se é pra tomar expresso em casa, a xícara pequena de 160ml é mais elegante e não sobra café esfriando depois que você já bebeu o que queria.",
   },
   {
-    pergunta: "Moedor barato aguenta uso diário?",
-    resposta: "Os de marca conhecida (Cadence, Oster, Philco) têm milhares de avaliações confirmando uso prolongado. Já o mais barato da lista tem só 25 avaliações e um relato real de superaquecimento no primeiro uso. Funciona, mas é mais arriscado pra quem mói café todo dia.",
+    pergunta: "Vale a pena pagar mais caro numa marca conhecida?",
+    resposta: "Só se durabilidade a longo prazo pesar mais que economia agora. O copo mais barato desta lista (genérico, R$26-47) já tem quase 600 avaliações reais e nota 4,3, mas tem menos histórico de marca que o WOLFF. Pra uso ocasional, o genérico resolve. Pra usar todo dia por anos, marca estabelecida costuma compensar.",
   },
 ];
 
@@ -41,27 +41,28 @@ const faqSchema = {
 };
 ---
 <Layout
-  title="Moedor de café elétrico: qual escolher"
-  description="Moedores de café elétricos pesquisados e comparados na Amazon, do mais barato ao ajustável, com preço, nota e o defeito real de cada um."
-  image="/images/produtos/cadence-di-grano-moedor-cafe.png"
+  title="Copo térmico para café: qual escolher"
+  description="Copos e canecas térmicas pra café pesquisados na Amazon, com preço, nota e o defeito real de cada um, pra escolher sem chute."
+  image="/images/produtos/copo-termico-wolff-600ml-cafe.jpg"
 >
   <p><a href="/">← Início</a></p>
-  <h1>Moedor de café elétrico: qual escolher</h1>
-  <p class="atualizado">Todos os produtos abaixo foram pesquisados na Amazon (lista de mais vendidos), com preço, nota e avaliações reais. Fotos ainda em produção.</p>
+  <h1>Copo térmico para café: qual escolher</h1>
+  <p class="atualizado">Todos os produtos abaixo foram pesquisados na Amazon, com preço, nota e avaliações reais.</p>
 
   <p>
-    Café moído na hora rende mais sabor do que pó de pacote, mas moedor
-    errado significa pó irregular, limpeza chata ou moagem que não serve
-    pro seu método de preparo. Os produtos abaixo estão em ordem de preço:
-    do mais simples pra testar, até o ajustável pra quem já sabe o que quer.
+    Café esfriando antes de terminar é o problema mais comum de quem
+    trabalha ou viaja com a bebida. Um copo térmico de verdade (parede
+    dupla a vácuo) resolve isso, mas nem todo "copo térmico" anunciado
+    realmente tem essa tecnologia. Os produtos abaixo estão em ordem de
+    preço, dos três com parede dupla comprovada.
   </p>
 
   <section class="como-escolhemos">
     <h2>Como escolhemos</h2>
     <p>
-      Nenhum moedor entra nessa lista sem um defeito real declarado (bloco
-      "Vale saber" em cada card), pesquisado em avaliação de comprador,
-      nunca inventado. Preço sempre em faixa, nunca fixo.
+      Nenhum produto entra nessa lista sem um defeito real declarado (bloco
+      "Vale saber" em cada card), pesquisado na ficha técnica e nas
+      características reais do produto. Preço sempre em faixa, nunca fixo.
     </p>
   </section>
 
@@ -71,10 +72,10 @@ const faqSchema = {
       <table>
         <thead>
           <tr>
-            <th scope="col">Produto</th>
-            <th scope="col">Preço</th>
-            <th scope="col">Selo</th>
-            <th scope="col"><span class="sr-only">Ação</span></th>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Selo</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -96,17 +97,18 @@ const faqSchema = {
   <section class="honestidade">
     <h2>Onde vale gastar mais, onde não faz diferença</h2>
     <p>
-      A diferença entre o mais barato (~R$40) e o mais completo (~R$315) não
-      é sobre "moer café", todos moem. É sobre controle e durabilidade: o
-      ajustável (Hamilton Beach) dá níveis reais de moagem e câmara
-      removível pra lavar, o que importa pra quem usa prensa francesa ou
-      espresso. Pra café coado do dia a dia, qualquer um dos moedores de
-      lâmina já resolve. O barato só é mais arriscado em uso muito
-      frequente.
+      O copo genérico de R$26-47 e o WOLFF de R$49-64 têm a mesma tecnologia
+      (parede dupla, tampa anti-vazamento): a diferença de preço é
+      sobretudo confiança de marca e histórico de avaliações (588 contra
+      quase 1.800). Se você só quer testar se copo térmico faz diferença no
+      seu dia, o genérico já resolve. A xícara de 160ml não compete com os
+      outros dois: é pra outro uso (mesa, expresso em casa), não pra levar
+      na rua, então não faz sentido comparar preço entre ela e os copos
+      grandes.
     </p>
   </section>
 
-  <section id="moedor-de-cafe" class="categoria">
+  <section id={categoria.id} class="categoria">
     <h2>{categoria.nome}</h2>
     <p>{categoria.descricao}</p>
     {produtos.map((produto) => <ProdutoCard produto={produto} />)}
@@ -114,13 +116,9 @@ const faqSchema = {
 
   <p class="cluster-link">
     Veja também:
-    <a href="/moedor-de-cafe/erros-comuns/">os erros mais comuns escolhendo moedor →</a>
+    <a href="/cafeteira/">cafeteira elétrica: qual escolher →</a>
     ·
-    <a href="/moedor-de-cafe/por-orcamento/">os mesmos moedores por orçamento →</a>
-    ·
-    <a href="/moedor-de-cafe/comparativo-top3/">comparativo Top 3 lado a lado →</a>
-    ·
-    <a href="/copo-termico/">copo térmico pra não deixar o café esfriar →</a>
+    <a href="/moedor-de-cafe/">moedor de café: qual escolher →</a>
   </p>
 
   <section class="faq">
@@ -137,10 +135,6 @@ const faqSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <style>
-    .sr-only {
-      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
-    }
     .atualizado { color: var(--cor-texto-suave); font-size: 0.9rem; }
     .cluster-link { font-weight: 600; margin: 2.5rem 0 0; line-height: 2; }
     .como-escolhemos {

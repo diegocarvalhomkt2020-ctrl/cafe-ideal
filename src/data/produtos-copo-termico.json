@@ -1,0 +1,66 @@
+{
+  "_nota": "Pilar novo (02/09/2026): copo/caneca térmica para café. 3 produtos reais pesquisados na Amazon, preço/nota/avaliações extraídos direto da página do produto. Contras derivados da ficha técnica e características reais do produto.",
+  "categorias": [
+    {
+      "id": "copo-termico",
+      "nome": "Copo e caneca térmica",
+      "descricao": "Café esfriando antes de terminar é o problema mais comum de quem trabalha ou viaja com a bebida. Um copo térmico de verdade (parede dupla) resolve isso, mas o preço varia bastante dependendo do que ele promete.",
+      "produtos": [
+        {
+          "id": "CAFE-COPO-01",
+          "nome": "Copo Térmico Café e Cerveja com Tampa, Aço Inoxidável Anti-vazamento 500ml",
+          "imagem": "/images/produtos/copo-termico-barato-500ml-cafe.jpg",
+          "selo": "Mais barato",
+          "precoMin": 26,
+          "precoMax": 47,
+          "nota": 4.3,
+          "avaliacoes": 588,
+          "pros": [
+            "Parede dupla de verdade, mantém o café quente por mais tempo que copo comum",
+            "Tampa anti-vazamento, dá pra levar na bolsa ou mochila sem medo",
+            "Quase 600 avaliações reais, preço bem mais baixo que os outros dois desta lista"
+          ],
+          "contra": "É genérico, sem marca conhecida por trás: acabamento e durabilidade a longo prazo têm menos histórico do que um produto de marca estabelecida.",
+          "paraQuem": "Pra quem quer testar um copo térmico de verdade sem gastar muito",
+          "linkAmazon": "https://www.amazon.com.br/dp/B09W4BP6F4?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CAFE-COPO-02",
+          "nome": "WOLFF Copo Térmico de Aço Inox Parede Dupla com Tampa 600ml",
+          "imagem": "/images/produtos/copo-termico-wolff-600ml-cafe.jpg",
+          "selo": "Mais avaliado",
+          "precoMin": 49,
+          "precoMax": 64,
+          "nota": 4.5,
+          "avaliacoes": 1794,
+          "pros": [
+            "Marca WOLFF, referência em produtos térmicos no Brasil",
+            "600ml de capacidade, o maior volume dos três desta lista",
+            "Quase 1,8 mil avaliações, de longe o mais testado da categoria"
+          ],
+          "contra": "É o segundo mais caro da lista, mesmo sendo o modelo intermediário: a diferença pro mais barato é sobretudo confiança de marca, não recurso extra.",
+          "paraQuem": "Pra quem quer um copo térmico grande, de marca confiável, pra usar todo dia",
+          "linkAmazon": "https://www.amazon.com.br/dp/B09RG5SDF8?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CAFE-COPO-03",
+          "nome": "Xícara de Café Espresso Inox 160ml, Parede Dupla Isotérmica",
+          "imagem": "/images/produtos/xicara-espresso-inox-parede-dupla.jpg",
+          "selo": "Melhor nota",
+          "precoMin": 48,
+          "precoMax": 55,
+          "nota": 4.6,
+          "avaliacoes": 117,
+          "pros": [
+            "Formato de xícara pra tomar em casa, não é copo de viagem: mais elegante na mesa",
+            "Parede dupla mantém o expresso quente sem esquentar por fora, dá pra segurar sem luva",
+            "Nota mais alta dos três (4,6), reutilizável e resistente"
+          ],
+          "contra": "Só 160ml: não serve pra quem toma café grande ou quer levar pra rua. É xícara de mesa, não copo de viagem.",
+          "paraQuem": "Pra quem toma expresso em casa e quer trocar a xícara comum por uma que não esfria",
+          "linkAmazon": "https://www.amazon.com.br/dp/B0FP9XYTJH?tag=dicasinteli05-20"
+        }
+      ]
+    }
+  ]
+}
