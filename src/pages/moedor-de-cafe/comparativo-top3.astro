@@ -44,7 +44,7 @@ const breadcrumbSchema = {
         </tr>
         <tr>
           <th scope="row">Preço</th>
-          {top3.map((p) => <td>R$ {p.precoMin} a R$ {p.precoMax}</td>)}
+          {top3.map((p) => <td>{p.precoMin === p.precoMax ? `R$ ${p.precoMin}` : `R$ ${p.precoMin} a R$ ${p.precoMax}`}</td>)}
         </tr>
         <tr>
           <th scope="row">Nota</th>
