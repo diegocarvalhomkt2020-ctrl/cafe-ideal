@@ -30,6 +30,23 @@ const breadcrumbSchema = {
   <h1>Cafeteira por orçamento</h1>
   <p>Os mesmos produtos do guia principal, separados por faixa de preço.</p>
 
+  <section class="raciocinio">
+    <h2>O que muda de verdade entre as faixas</h2>
+    <p>
+      Até R$150 a mais barata da lista tem um problema recorrente: a jarra
+      de vidro racha ou quebra com poucos usos, inclusive relato de rachar
+      na primeira semana. Na faixa de R$150 a R$300 tem cafeteira com
+      timer (mas com relatos de parar de esquentar depois de meses) e a
+      mais avaliada de todas, a Oster, cuja própria marca reconhece no
+      manual que a jarra vaza se você servir rápido ou ela estiver mais da
+      metade cheia. Acima de R$300 são as máquinas de cápsula, e aqui a
+      troca é outra: a multibebida vaza água pelo reservatório de cápsulas
+      e não tem botão simples de ligar, e até a compacta Nespresso tem
+      compartimento de descarte pequeno, cabem só 4 a 5 cápsulas antes de
+      esvaziar.
+    </p>
+  </section>
+
   {faixas.map((faixa) => {
     const produtosFaixa = produtos.filter((p) => p.precoMin >= faixa.min && p.precoMin < faixa.max);
     return produtosFaixa.length > 0 && (

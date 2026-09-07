@@ -30,6 +30,22 @@ const breadcrumbSchema = {
   <h1>Moedor de café por orçamento</h1>
   <p>Os mesmos produtos do guia principal, separados por faixa de preço.</p>
 
+  <section class="raciocinio">
+    <h2>O que muda de verdade entre as faixas</h2>
+    <p>
+      Até R$100 tem dois extremos: o Cadence é bem avaliado, mas não pode
+      lavar com água e a moagem não fica fina o bastante pra espresso,
+      funciona bem só pra coador e filtro; já o modelo mais barato de
+      todos tem relato real de superaquecimento e fumaça no primeiro uso.
+      Na faixa de R$100 a R$200, tanto o Philco (sem ajuste de moagem,
+      lâmina simples) quanto a Oster (copo de pó que não sai pra lavar)
+      abrem mão de recursos que só aparecem na faixa seguinte. Acima de
+      R$200, o Hamilton Beach é o mais completo, com ajuste de moagem de
+      verdade, mas a tampa acrílica com trava de segurança é apontada como
+      difícil de fechar direito, e o moedor só liga com ela certinha.
+    </p>
+  </section>
+
   {faixas.map((faixa) => {
     const produtosFaixa = produtos.filter((p) => p.precoMin >= faixa.min && p.precoMin < faixa.max);
     return produtosFaixa.length > 0 && (
