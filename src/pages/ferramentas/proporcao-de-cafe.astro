@@ -1,0 +1,316 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Calculadora from '../../components/Calculadora.astro';
+
+const SITE = 'https://cafe.dicasinteligentes.com';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: `${SITE}/` },
+    { "@type": "ListItem", position: 2, name: "Calculadora de proporção de café", item: `${SITE}/ferramentas/proporcao-de-cafe/` },
+  ],
+};
+
+const metodos = [
+  { nome: "Coado com filtro de papel", proporcao: "1:16", moagem: "Média, textura de areia grossa", tempo: "3 a 4 minutos" },
+  { nome: "V60", proporcao: "1:16", moagem: "Média-fina", tempo: "2min30 a 3min30" },
+  { nome: "Prensa francesa", proporcao: "1:13", moagem: "Grossa, quase como sal grosso", tempo: "4 minutos de infusão" },
+  { nome: "Aeropress", proporcao: "1:14", moagem: "Fina a média", tempo: "1 a 2 minutos" },
+  { nome: "Moka italiana", proporcao: "1:8", moagem: "Média-fina, sem compactar", tempo: "4 a 5 minutos em fogo baixo" },
+  { nome: "Espresso", proporcao: "1:2", moagem: "Muito fina", tempo: "25 a 30 segundos de extração" },
+];
+
+const faq = [
+  {
+    pergunta: "O que quer dizer proporção 1:16?",
+    resposta: "Significa uma parte de café para dezesseis partes de água, medindo tudo em peso. Ou seja, 20 g de pó para 320 g de água, que na prática são 320 ml. Contar em peso é o que torna a receita repetível, porque volume de pó moído varia bastante conforme a moagem.",
+  },
+  {
+    pergunta: "Preciso mesmo de balança?",
+    resposta: "Precisa se você quer o mesmo café todo dia. Colher de sopa de pó pode variar de 5 a 9 gramas dependendo da moagem e de quão cheia está, o que é diferença suficiente para mudar o sabor de forma perceptível. Balança de cozinha simples resolve, não precisa ser de barista.",
+  },
+  {
+    pergunta: "Meu café está amargo. Aumento ou diminuo o pó?",
+    resposta: "Amargo geralmente é extração demais, e não pó demais. Antes de mexer na proporção, tente moagem mais grossa, água um pouco menos quente, perto de 92 °C, ou tempo de contato menor. Se depois disso ainda estiver forte demais para o seu gosto, aí sim reduza o pó.",
+  },
+  {
+    pergunta: "Café azedo é o quê?",
+    resposta: "Normalmente extração de menos, o contrário do amargo. Moagem mais fina, água um pouco mais quente ou mais tempo de contato costumam resolver. Grão de torra clara tende naturalmente à acidez, o que é característica e não defeito.",
+  },
+  {
+    pergunta: "Qual temperatura da água?",
+    resposta: "Entre 90 e 96 °C para a maioria dos métodos. Água fervendo, a 100 °C, extrai amargor a mais. Sem termômetro, deixe a água descansar de 30 a 45 segundos depois de ferver antes de despejar.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((item) => ({
+    "@type": "Question",
+    name: item.pergunta,
+    acceptedAnswer: { "@type": "Answer", text: item.resposta },
+  })),
+};
+
+const appSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Calculadora de proporção de café e água",
+  applicationCategory: "UtilitiesApplication",
+  operatingSystem: "Qualquer navegador",
+  url: `${SITE}/ferramentas/proporcao-de-cafe/`,
+  offers: { "@type": "Offer", price: "0", priceCurrency: "BRL" },
+};
+---
+
+<Layout
+  title="Calculadora de proporção de café e água por método"
+  description="Quantos gramas de pó e quantos ml de água para coado, V60, prensa francesa, aeropress, moka e espresso, com a moagem e o tempo certos de cada método."
+  image="/images/produtos/electrolux-ecm10-cafeteira-filtro.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(appSchema)} />
+
+  <p><a href="/">← Início</a></p>
+  <h1>Proporção de café e água</h1>
+
+  <p>
+    Cada método de preparo pede uma proporção diferente, e é por isso que a
+    mesma receita fica boa na prensa francesa e fraca no coado. Escolha o
+    método, diga quantas xícaras, e a calculadora devolve o peso do pó, o
+    volume de água, a moagem e o tempo.
+  </p>
+
+  <Calculadora
+    titulo="Calcular a receita"
+    subtitulo="A conta é feita em peso, que é o que torna o café repetível."
+  >
+    <div class="calc-campos">
+      <div class="calc-campo largo">
+        <label for="metodo">Método de preparo</label>
+        <select id="metodo">
+          <option value="coado">Coado com filtro de papel</option>
+          <option value="v60">V60</option>
+          <option value="prensa">Prensa francesa</option>
+          <option value="aeropress">Aeropress</option>
+          <option value="moka">Moka italiana</option>
+          <option value="espresso">Espresso</option>
+        </select>
+      </div>
+      <div class="calc-campo">
+        <label for="xicaras">Quantas xícaras</label>
+        <input type="number" id="xicaras" value="2" min="1" max="20" step="1" />
+      </div>
+      <div class="calc-campo">
+        <label for="tamanho">Tamanho da xícara</label>
+        <select id="tamanho">
+          <option value="80">Xícara pequena, 80 ml</option>
+          <option value="150" selected>Xícara comum, 150 ml</option>
+          <option value="200">Caneca, 200 ml</option>
+          <option value="240">Caneca grande, 240 ml</option>
+        </select>
+      </div>
+      <div class="calc-campo largo">
+        <label for="forca">Força</label>
+        <select id="forca">
+          <option value="fraco">Mais suave</option>
+          <option value="medio" selected>Equilibrado</option>
+          <option value="forte">Mais encorpado</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="calc-acoes">
+      <button type="button" id="btn-calc">Calcular</button>
+    </div>
+
+    <p class="calc-erro" id="erro" hidden></p>
+
+    <div class="calc-resultado" id="resultado" hidden>
+      <h3 id="r-metodo">Coado com filtro de papel</h3>
+      <div class="calc-dupla">
+        <div>
+          <span class="calc-num" id="r-po">19 <span class="un">g de pó</span></span>
+          <span class="ajuda">pesado, não medido em colher</span>
+        </div>
+        <div>
+          <span class="calc-num" id="r-agua">300 <span class="un">ml de água</span></span>
+          <span class="ajuda">a 90 até 96 °C</span>
+        </div>
+      </div>
+      <ul class="calc-linhas">
+        <li><span>Proporção usada</span> <b id="r-prop">1:16</b></li>
+        <li><span>Moagem</span> <b id="r-moagem">Média</b></li>
+        <li><span>Tempo</span> <b id="r-tempo">3 a 4 minutos</b></li>
+        <li><span>Equivalente em colher de sopa</span> <b id="r-colher">~3</b></li>
+      </ul>
+      <p class="calc-aviso" id="r-dica"></p>
+      <details class="calc-conta">
+        <summary>Como a conta é feita</summary>
+        <div class="corpo" id="conta"></div>
+      </details>
+    </div>
+  </Calculadora>
+
+  <h2>Tabela de proporção por método</h2>
+  <p>
+    Os valores abaixo são o ponto de partida equilibrado de cada método. A
+    calculadora ajusta em torno deles conforme a força escolhida.
+  </p>
+  <div class="tabela-wrap">
+    <table>
+      <thead>
+        <tr><th>Método</th><th>Proporção</th><th>Moagem</th><th>Tempo</th></tr>
+      </thead>
+      <tbody>
+        {metodos.map((m) => (
+          <tr>
+            <td><strong>{m.nome}</strong></td>
+            <td class="num">{m.proporcao}</td>
+            <td>{m.moagem}</td>
+            <td>{m.tempo}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Por que a proporção muda tanto entre métodos</h2>
+  <p>
+    O que define a proporção é <strong>quanto tempo a água fica em contato com o
+    pó</strong> e <strong>como ela passa</strong>.
+  </p>
+  <ul>
+    <li>
+      <strong>Coado e V60</strong> são de passagem: a água atravessa o pó e cai.
+      O contato é curto, então se usa mais água por grama, na faixa de 1:15 a
+      1:17.
+    </li>
+    <li>
+      <strong>Prensa francesa</strong> é de imersão: o pó fica submerso por
+      quatro minutos. Contato longo extrai mais, então a proporção fica mais
+      concentrada, perto de 1:13, para não ficar aguado.
+    </li>
+    <li>
+      <strong>Moka</strong> trabalha com pressão de vapor e produz uma bebida
+      concentrada, quase um espresso caseiro. Por isso 1:8, que parece pouca
+      água mas é o correto para o método.
+    </li>
+  </ul>
+
+  <h2>Amargo e azedo são problemas opostos</h2>
+  <p>
+    É a confusão mais comum de quem está começando, e mexer no lugar errado
+    piora. <strong>Amargo é extração demais</strong>, ou seja, a água tirou do pó
+    mais do que devia. As causas costumam ser moagem fina demais, água muito
+    quente ou tempo longo demais.
+  </p>
+  <p>
+    <strong>Azedo é extração de menos.</strong> A água não teve tempo ou
+    temperatura para extrair o que devia. Moagem mais fina, água mais quente ou
+    mais tempo resolvem.
+  </p>
+  <p>
+    Repare que em nenhum dos dois casos a primeira resposta é mudar a
+    quantidade de pó. Ajuste a moagem primeiro, que é a variável de maior
+    efeito, e só mexa na proporção quando o café estiver tecnicamente correto e
+    ainda assim forte ou fraco demais para o seu gosto.
+  </p>
+
+  <h2>Perguntas frequentes</h2>
+  {faq.map((item) => (
+    <div class="faq-item">
+      <h3>{item.pergunta}</h3>
+      <p>{item.resposta}</p>
+    </div>
+  ))}
+
+  <p class="volta">
+    A moagem certa depende do moedor. Se o seu é de lâmina e não consegue
+    manter a moagem uniforme, veja o
+    <a href="/moedor-de-cafe/">comparativo de moedor de café</a>.
+  </p>
+</Layout>
+
+<style>
+  .tabela-wrap { overflow-x: auto; margin: 1.2rem 0 2rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 0.94rem; }
+  th, td { padding: 0.6rem 0.7rem; text-align: left; border-bottom: 1px solid var(--cor-borda); vertical-align: top; }
+  th { background: var(--cor-superficie); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--cor-texto-suave); }
+  td.num { white-space: nowrap; font-variant-numeric: tabular-nums; font-weight: 700; }
+  .faq-item { margin-bottom: 1.4rem; }
+  .faq-item h3 { font-size: 1.05rem; margin-bottom: 0.35rem; }
+  .faq-item p { margin-top: 0; }
+  .volta { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid var(--cor-borda); }
+  ul { line-height: 1.7; }
+  li { margin-bottom: 0.6rem; }
+</style>
+
+<script>
+  const METODOS = {
+    coado:     { nome: 'Coado com filtro de papel', base: 16, min: 15, max: 17, moagem: 'Média, textura de areia grossa', tempo: '3 a 4 minutos', dica: 'Molhe o filtro com água quente antes e descarte essa água. Tira o gosto de papel e já aquece a xícara.' },
+    v60:       { nome: 'V60', base: 16, min: 15, max: 17, moagem: 'Média-fina', tempo: '2min30 a 3min30', dica: 'Comece com a pré-infusão: molhe o pó com o dobro do peso dele em água e espere 30 segundos antes de continuar.' },
+    prensa:    { nome: 'Prensa francesa', base: 13, min: 12, max: 15, moagem: 'Grossa, quase como sal grosso', tempo: '4 minutos de infusão', dica: 'Moagem fina na prensa entope o filtro e enche a xícara de borra. Se está saindo muita borra, o problema é a moagem, não o método.' },
+    aeropress: { nome: 'Aeropress', base: 14, min: 12, max: 16, moagem: 'Fina a média', tempo: '1 a 2 minutos', dica: 'Pressione devagar, em cerca de 30 segundos. Empurrar com força extrai amargor e não acelera nada de útil.' },
+    moka:      { nome: 'Moka italiana', base: 8, min: 7, max: 10, moagem: 'Média-fina, sem compactar', tempo: '4 a 5 minutos em fogo baixo', dica: 'Use água já quente no reservatório e fogo baixo. Água fria em fogo alto cozinha o pó antes da extração e é a causa do gosto queimado.' },
+    espresso:  { nome: 'Espresso', base: 2, min: 1.5, max: 2.5, moagem: 'Muito fina', tempo: '25 a 30 segundos de extração', dica: 'Aqui a proporção é de rendimento: 18 g de pó para cerca de 36 g de bebida na xícara. A moagem é o que controla o tempo.' },
+  };
+
+  const el = (id) => document.getElementById(id);
+
+  function calcular() {
+    const metodo = METODOS[el('metodo').value];
+    const xicaras = parseFloat(el('xicaras').value);
+    const tamanho = parseFloat(el('tamanho').value);
+    const forca = el('forca').value;
+    const erro = el('erro');
+    const resultado = el('resultado');
+
+    if (!metodo || !Number.isFinite(xicaras) || xicaras <= 0) {
+      erro.textContent = 'Escolha o método e informe quantas xícaras você quer.';
+      erro.hidden = false; resultado.hidden = true; return;
+    }
+    erro.hidden = true;
+
+    let prop = metodo.base;
+    if (forca === 'forte') prop = metodo.min;
+    if (forca === 'fraco') prop = metodo.max;
+
+    const agua = xicaras * tamanho;
+    const po = agua / prop;
+    const colheres = Math.round(po / 7 * 10) / 10;
+
+    el('r-metodo').textContent = metodo.nome;
+    el('r-po').innerHTML = (Math.round(po * 10) / 10).toString().replace('.', ',') + ' <span class="un">g de pó</span>';
+    el('r-agua').innerHTML = Math.round(agua) + ' <span class="un">ml de água</span>';
+    el('r-prop').textContent = '1:' + prop.toString().replace('.', ',');
+    el('r-moagem').textContent = metodo.moagem;
+    el('r-tempo').textContent = metodo.tempo;
+    el('r-colher').textContent = '~' + colheres.toString().replace('.', ',');
+    el('r-dica').innerHTML = '<strong>Dica do método:</strong> ' + metodo.dica;
+
+    el('conta').innerHTML =
+      '<p>Água total: <code>' + xicaras + ' × ' + tamanho + ' ml = ' + Math.round(agua) + ' ml</code></p>' +
+      '<p>Pó: <code>' + Math.round(agua) + ' ÷ ' + prop.toString().replace('.', ',') + ' = ' +
+      (Math.round(po * 10) / 10).toString().replace('.', ',') + ' g</code></p>' +
+      '<p>A proporção 1:' + prop.toString().replace('.', ',') + ' vem da faixa de 1:' + metodo.min +
+      ' a 1:' + metodo.max + ' do método, escolhendo o extremo mais concentrado quando você pede mais encorpado.</p>' +
+      '<p>A equivalência em colher de sopa usa 7 g por colher cheia, e é só uma referência: ' +
+      'a variação real vai de 5 a 9 g conforme a moagem, que é justamente o motivo de pesar.</p>';
+
+    resultado.hidden = false;
+  }
+
+  if (el('btn-calc')) {
+    el('btn-calc').addEventListener('click', calcular);
+    ['metodo', 'xicaras', 'tamanho', 'forca'].forEach((id) => {
+      const c = el(id);
+      if (c) c.addEventListener('change', calcular);
+    });
+    calcular();
+  }
+</script>
