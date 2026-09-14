@@ -1,0 +1,84 @@
+{
+  "_nota": "1 categoria com 4 produtos reais pesquisados na Amazon, com foto e link de afiliado. Apenas Amazon, sem Mercado Livre.",
+  "categorias": [
+    {
+      "id": "espumador-leite",
+      "nome": "Espumador de leite",
+      "descricao": "Espumador errado é espuma que desmancha rápido ou aparelho que só bate, sem esquentar o leite de verdade. Aqui comparamos modelo de bancada (aquece e espuma) e modelo portátil (só espuma, bem mais barato).",
+      "produtos": [
+        {
+          "id": "CI-ESPUMADOR-01",
+          "nome": "Espumador de Leite Elétrico Oster 4 em 1, 127V",
+          "imagem": "/images/produtos/oster-espumador-leite-eletrico-4em1-127v.png",
+          "selo": "Marca conhecida",
+          "precoMin": 279,
+          "precoMax": 279,
+          "nota": 4.4,
+          "avaliacoes": 320,
+          "pros": [
+            "Marca consolidada em eletroportáteis no Brasil",
+            "4 funções (espuma quente, fria, aquece sem espumar, etc.)",
+            "Bom volume de avaliações (320)"
+          ],
+          "contra": "A nota (4,4) não é a mais alta da categoria, mesmo sendo de marca conhecida e com preço similar ao Black+Decker desta lista.",
+          "paraQuem": "Pra quem prioriza marca conhecida com histórico no Brasil",
+          "linkAmazon": "https://www.amazon.com.br/dp/B0BYB7WKJR?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CI-ESPUMADOR-02",
+          "nome": "BLACK+DECKER Espumador de Leite Gourmand Gris, 110V",
+          "imagem": "/images/produtos/blackdecker-espumador-leite-gourmand-gris-110v.png",
+          "selo": "Maior volume de avaliações",
+          "precoMin": 279,
+          "precoMax": 279,
+          "nota": 4.2,
+          "avaliacoes": 461,
+          "pros": [
+            "Maior volume de avaliações da categoria (461)",
+            "4 funções, tampa anti-vazamentos",
+            "Marca internacional consolidada"
+          ],
+          "contra": "É a nota mais baixa da lista (4,2) — mesmo com bom volume de avaliações, vale ler os comentários recentes antes de decidir.",
+          "paraQuem": "Pra quem quer a opção com mais histórico de avaliação acumulado",
+          "linkAmazon": "https://www.amazon.com.br/dp/B08ZKNTHXQ?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CI-ESPUMADOR-03",
+          "nome": "Cremeira de Leite Elétrica, 127V",
+          "imagem": "/images/produtos/cremeira-leite-eletrica-127v.png",
+          "selo": "Mais avaliada",
+          "precoMin": 337,
+          "precoMax": 337,
+          "nota": 4.5,
+          "avaliacoes": 78,
+          "pros": [
+            "Nota mais alta da categoria (4,5), selo \"Escolha da Amazon\"",
+            "Mais de 100 compras no mês passado",
+            "Boa opção pra quem prioriza nota sobre marca"
+          ],
+          "contra": "É a mais cara da lista entre os modelos de bancada, e tem menos avaliações (78) que o Oster e o Black+Decker.",
+          "paraQuem": "Pra quem quer a nota mais alta entre os modelos de bancada e não se importa em pagar um pouco mais",
+          "linkAmazon": "https://www.amazon.com.br/dp/B09H3T5XSK?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CI-ESPUMADOR-04",
+          "nome": "Mini Mixer Elétrico Recarregável USB, 3 Velocidades",
+          "imagem": "/images/produtos/mini-mixer-eletrico-recarregavel-usb-3velocidades.png",
+          "selo": "Mais barato",
+          "precoMin": 24,
+          "precoMax": 24,
+          "nota": 4.4,
+          "avaliacoes": 112,
+          "pros": [
+            "De longe o mais barato da categoria (mais de 10x menos que os de bancada)",
+            "Portátil, recarregável por USB, mais de 500 compras no mês passado",
+            "Serve também pra outras bebidas (matcha, shakes, ovos)"
+          ],
+          "contra": "Só bate/espuma, não aquece o leite como os modelos de bancada — pra espuma quente, precisa esquentar o leite separado antes.",
+          "paraQuem": "Pra quem quer gastar pouco e não se importa em aquecer o leite à parte",
+          "linkAmazon": "https://www.amazon.com.br/dp/B0GS7G3P8K?tag=dicasinteli05-20"
+        }
+      ]
+    }
+  ]
+}

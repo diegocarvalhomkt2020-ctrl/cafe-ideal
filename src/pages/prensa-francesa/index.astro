@@ -1,9 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ProdutoCard from '../../components/ProdutoCard.astro';
-import dados from '../../data/produtos-copo-termico.json';
+import dados from '../../data/produtos-prensa-francesa.json';
 
-const categoria = dados.categorias.find((c) => c.id === 'copo-termico');
+const categoria = dados.categorias.find((c) => c.id === 'prensa-francesa');
 const produtos = categoria.produtos;
 
 const breadcrumbSchema = {
@@ -11,22 +11,22 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
-    { "@type": "ListItem", position: 2, name: "Copo térmico", item: "https://cafe.dicasinteligentes.com/copo-termico/" },
+    { "@type": "ListItem", position: 2, name: "Prensa francesa", item: "https://cafe.dicasinteligentes.com/prensa-francesa/" },
   ],
 };
 
 const faq = [
   {
-    pergunta: "Copo térmico realmente mantém o café quente por horas?",
-    resposta: "Mantém, mas não pelo mesmo tempo que uma garrafa térmica de verdade. O segredo é a parede dupla a vácuo: sem ela, é só um copo de inox comum, que esfria quase tão rápido quanto um copo qualquer. Os 3 produtos desta lista têm parede dupla de verdade.",
+    pergunta: "Prensa francesa deixa borra na xícara?",
+    resposta: "Um pouco, sim — é característica do método, não defeito. O filtro de metal deixa passar mais óleo e partícula fina que um filtro de papel. Quem gosta de café mais encorpado costuma preferir assim; quem não gosta de borra prefere café coado com filtro de papel.",
   },
   {
-    pergunta: "Copo grande (500-600ml) ou xícara pequena (160ml), qual escolher?",
-    resposta: "Depende do uso. Se é pra levar café na rua ou no carro, o copo de 500-600ml compensa mais, rende mais líquido e tem tampa anti-vazamento. Se é pra tomar expresso em casa, a xícara pequena de 160ml é mais elegante e não sobra café esfriando depois que você já bebeu o que queria.",
+    pergunta: "Vidro trinca fácil na prensa francesa?",
+    resposta: "Depende da qualidade do vidro. Marca popular costuma usar vidro mais fino, mais sensível a choque térmico (água fervendo direto num vidro frio, por exemplo). Marca premium geralmente usa vidro mais resistente. De qualquer forma, evite mudança brusca de temperatura em qualquer uma.",
   },
   {
-    pergunta: "Vale a pena pagar mais caro numa marca conhecida?",
-    resposta: "Só se durabilidade a longo prazo pesar mais que economia agora. O copo mais barato desta lista (genérico, R$26-47) já tem quase 600 avaliações reais e nota 4,3, mas tem menos histórico de marca que o WOLFF. Pra uso ocasional, o genérico resolve. Pra usar todo dia por anos, marca estabelecida costuma compensar.",
+    pergunta: "350ml ou 600ml, qual escolher?",
+    resposta: "350ml rende cerca de 2 xícaras, bom pra uso individual. 600ml rende o dobro, melhor se você prepara café pra mais gente ou quer servir mais de uma vez sem repetir o processo.",
   },
 ];
 
@@ -41,20 +41,19 @@ const faqSchema = {
 };
 ---
 <Layout
-  title="Copo térmico para café: qual escolher"
-  description="Copos e canecas térmicas pra café pesquisados na Amazon, com preço, nota e o defeito real de cada um, pra escolher sem chute."
-  image="/images/produtos/copo-termico-wolff-600ml-cafe.jpg"
+  title="Prensa francesa para café: qual escolher"
+  description="Prensas francesas pesquisadas na Amazon, com preço, nota e o defeito real de cada uma, comparando marca popular e marca premium, pra escolher sem chute."
+  image="/images/produtos/bialetti-french-press-preziosa-350ml.png"
 >
   <p><a href="/">← Início</a></p>
-  <h1>Copo térmico para café: qual escolher</h1>
+  <h1>Prensa francesa para café: qual escolher</h1>
   <p class="atualizado">Todos os produtos abaixo foram pesquisados na Amazon, com preço, nota e avaliações reais.</p>
 
   <p>
-    Café esfriando antes de terminar é o problema mais comum de quem
-    trabalha ou viaja com a bebida. Um copo térmico de verdade (parede
-    dupla a vácuo) resolve isso, mas nem todo "copo térmico" anunciado
-    realmente tem essa tecnologia. Os produtos abaixo estão em ordem de
-    preço, dos três com parede dupla comprovada.
+    Prensa francesa errada é vidro fino que trinca no primeiro choque
+    térmico ou êmbolo que não filtra direito, deixando borra em excesso na
+    xícara. Nessa lista comparamos marca popular (mais barata, nota menor)
+    e marca premium (mais cara, nota maior).
   </p>
 
   <section class="como-escolhemos">
@@ -97,14 +96,13 @@ const faqSchema = {
   <section class="honestidade">
     <h2>Onde vale gastar mais, onde não faz diferença</h2>
     <p>
-      O copo genérico de R$26-47 e o WOLFF de R$49-64 têm a mesma tecnologia
-      (parede dupla, tampa anti-vazamento): a diferença de preço é
-      sobretudo confiança de marca e histórico de avaliações (588 contra
-      quase 1.800). Se você só quer testar se copo térmico faz diferença no
-      seu dia, o genérico já resolve. A xícara de 160ml não compete com os
-      outros dois: é pra outro uso (mesa, expresso em casa), não pra levar
-      na rua, então não faz sentido comparar preço entre ela e os copos
-      grandes.
+      A Mimo Style (~R$24-27) tem o maior volume de avaliações de todas as
+      opções pesquisadas neste site (mais de 10 mil), então não é um
+      "aposta arriscada" — é só uma nota um pouco menor (4,4) que a Bialetti
+      (4,7-4,8). Se orçamento for a prioridade, ela resolve bem. A Bialetti
+      Preziosa (~R$251-325) só compensa a diferença de mais de 10x no preço
+      se durabilidade a longo prazo e marca de referência pesarem muito na
+      decisão.
     </p>
   </section>
 
@@ -116,13 +114,15 @@ const faqSchema = {
 
   <p class="cluster-link">
     Veja também:
-    <a href="/copo-termico/erros-comuns/">os erros mais comuns escolhendo copo térmico →</a>
+    <a href="/prensa-francesa/erros-comuns/">os erros mais comuns usando prensa francesa →</a>
     ·
-    <a href="/copo-termico/por-orcamento/">os mesmos copos por orçamento →</a>
+    <a href="/prensa-francesa/por-orcamento/">as mesmas prensas por orçamento →</a>
     ·
-    <a href="/copo-termico/comparativo-top3/">comparativo Top 3 lado a lado →</a>
+    <a href="/prensa-francesa/comparativo-top3/">comparativo Top 3 lado a lado →</a>
     ·
     <a href="/cafeteira/">cafeteira elétrica: qual escolher →</a>
+    ·
+    <a href="/chaleira-eletrica/">chaleira elétrica: qual escolher →</a>
     ·
     <a href="/moedor-de-cafe/">moedor de café: qual escolher →</a>
   </p>

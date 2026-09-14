@@ -1,0 +1,84 @@
+{
+  "_nota": "1 categoria com 4 produtos reais pesquisados na Amazon, com foto e link de afiliado. Apenas Amazon, sem Mercado Livre.",
+  "categorias": [
+    {
+      "id": "prensa-francesa",
+      "nome": "Prensa francesa",
+      "descricao": "Prensa francesa errada é vidro fino que trinca no primeiro choque térmico ou êmbolo que não filtra direito, deixando borra na xícara. Aqui comparamos marca popular (mais barata, nota menor) e marca premium (mais cara, nota maior).",
+      "produtos": [
+        {
+          "id": "CI-PRENSA-01",
+          "nome": "Mimo Style Cafeteira Prensa Francesa, 350ml",
+          "imagem": "/images/produtos/mimo-style-prensa-francesa-350ml.png",
+          "selo": "Mais vendida",
+          "precoMin": 23,
+          "precoMax": 58,
+          "nota": 4.4,
+          "avaliacoes": 10100,
+          "pros": [
+            "Disparado a mais vendida da categoria (mais de 10 mil avaliações)",
+            "Preço muito baixo, suporta temperatura de -20°C a 180°C segundo o fabricante",
+            "Boa opção pra quem quer testar prensa francesa sem gastar muito"
+          ],
+          "contra": "Nota mais baixa que as opções Bialetti desta lista (4,4 contra 4,7-4,8) — o vidro de marca popular costuma ser menos resistente a choque térmico que o de marca premium.",
+          "paraQuem": "Pra quem quer testar o método sem investir muito de cara",
+          "linkAmazon": "https://www.amazon.com.br/dp/B07TBHLGQT?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CI-PRENSA-02",
+          "nome": "Mimo Style Cafeteira Prensa Francesa, 600ml",
+          "imagem": "/images/produtos/mimo-style-prensa-francesa-600ml.png",
+          "selo": "Maior capacidade barata",
+          "precoMin": 26,
+          "precoMax": 75,
+          "nota": 4.4,
+          "avaliacoes": 10100,
+          "pros": [
+            "Mesma marca popular e mesmo volume alto de avaliações da versão 350ml",
+            "Capacidade maior (600ml), rende mais café por preparo",
+            "Boa opção pra quem prepara café pra mais de uma pessoa"
+          ],
+          "contra": "Mesmo trade-off da versão menor: nota mais baixa que as opções premium, vidro menos resistente a choque térmico.",
+          "paraQuem": "Pra quem quer preparar mais café de uma vez sem gastar muito",
+          "linkAmazon": "https://www.amazon.com.br/dp/B07WXJ8GQP?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CI-PRENSA-03",
+          "nome": "Cafeteira French Press Smart, 350ml, Bialetti",
+          "imagem": "/images/produtos/bialetti-french-press-smart-350ml.png",
+          "selo": "Meio-termo",
+          "precoMin": 155,
+          "precoMax": 155,
+          "nota": 4.7,
+          "avaliacoes": 357,
+          "pros": [
+            "Marca italiana de referência em cafeteiras, nota alta (4,7)",
+            "Preço bem menor que a linha Preziosa da mesma marca",
+            "Bom volume de avaliações pra uma opção intermediária"
+          ],
+          "contra": "Ainda é bem mais cara que a Mimo Style, e tem menos avaliações que a linha Preziosa da própria Bialetti.",
+          "paraQuem": "Pra quem quer marca de confiança sem pagar o preço da linha mais premium",
+          "linkAmazon": "https://www.amazon.com.br/dp/B07VDL3M9Z?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CI-PRENSA-04",
+          "nome": "Cafeteira French Press Preziosa, 350ml, Bialetti",
+          "imagem": "/images/produtos/bialetti-french-press-preziosa-350ml.png",
+          "selo": "Mais premium",
+          "precoMin": 251,
+          "precoMax": 325,
+          "nota": 4.8,
+          "avaliacoes": 3800,
+          "pros": [
+            "Nota mais alta da categoria (4,8) com bom volume de avaliações (3,8 mil)",
+            "Selo \"Escolha da Amazon\", linha mais completa da Bialetti",
+            "Marca de referência internacional em cafeteiras"
+          ],
+          "contra": "É a mais cara da lista, mais de 10x o preço da Mimo Style — só compensa se durabilidade e marca de referência forem prioridade real.",
+          "paraQuem": "Pra quem quer o melhor da categoria e não se importa em pagar o preço premium",
+          "linkAmazon": "https://www.amazon.com.br/dp/B008ESHNMI?tag=dicasinteli05-20"
+        }
+      ]
+    }
+  ]
+}

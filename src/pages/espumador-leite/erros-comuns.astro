@@ -1,0 +1,81 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Espumador de leite", item: "https://cafe.dicasinteligentes.com/espumador-leite/" },
+    { "@type": "ListItem", position: 3, name: "Erros comuns", item: "https://cafe.dicasinteligentes.com/espumador-leite/erros-comuns/" },
+  ],
+};
+
+const erros = [
+  {
+    titulo: "Usar leite desnatado esperando a mesma espuma do integral",
+    texto: "A gordura do leite integral ajuda a estabilizar a espuma. Leite desnatado espuma menos e a espuma desmancha mais rápido — não é defeito do aparelho.",
+  },
+  {
+    titulo: "Encher demais o recipiente do espumador",
+    texto: "O leite dobra ou triplica de volume ao espumar. Encha só até a marca indicada (geralmente 1/3 do recipiente), senão transborda.",
+  },
+  {
+    titulo: "Comprar espumador portátil esperando que ele aqueça o leite",
+    texto: "Mini mixer/espumador portátil só bate, não aquece. Pra cappuccino ou latte quente, esquente o leite separado (microondas ou fogão) antes de espumar.",
+  },
+  {
+    titulo: "Não limpar o espumador logo depois de usar",
+    texto: "Leite resseca rápido e gruda no batedor ou na parte interna. Lave assim que possível, antes que o resíduo endureça e fique mais difícil de tirar.",
+  },
+  {
+    titulo: "Achar que precisa do modelo mais caro pra fazer espuma boa",
+    texto: "A diferença de preço entre os modelos de bancada é pequena e nenhum se destaca disparado nesta pesquisa. Compare o que estiver disponível, não assuma que o mais caro sempre espuma melhor.",
+  },
+];
+---
+<Layout
+  title="Erros comuns escolhendo espumador de leite"
+  description="Os erros mais comuns na hora de escolher e usar espumador de leite, e como evitar cada um."
+>
+  <p><a href="/espumador-leite/">← Espumador de leite</a></p>
+  <h1>Erros comuns escolhendo espumador de leite</h1>
+  <p class="atualizado">Atualizado em setembro de 2026</p>
+
+  <p>
+    A maioria dos problemas com espumador de leite não é sobre o produto
+    ser ruim, é sobre o tipo de leite usado ou o uso sem os cuidados
+    certos. Os erros abaixo são os que mais aparecem em avaliação e
+    reclamação real de comprador.
+  </p>
+
+  <section class="erros">
+    {erros.map((erro, i) => (
+      <div class="erro-item">
+        <h2>{i + 1}. {erro.titulo}</h2>
+        <p>{erro.texto}</p>
+      </div>
+    ))}
+  </section>
+
+  <p class="cta-final">
+    Quer ver os produtos reais que pesquisamos?
+    <a href="/espumador-leite/">Volte pro guia completo →</a>
+  </p>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .atualizado { color: var(--cor-texto-suave); font-size: 0.9rem; }
+    .erros { margin: 2rem 0; }
+    .erro-item { margin-bottom: 1.75rem; }
+    .erro-item h2 { font-size: 1.1rem; margin: 0 0 0.4rem; }
+    .erro-item p { margin: 0; color: var(--cor-texto-suave); }
+    .cta-final {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cor-borda);
+      font-weight: 600;
+    }
+  </style>
+</Layout>

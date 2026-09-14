@@ -1,9 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ProdutoCard from '../../components/ProdutoCard.astro';
-import dados from '../../data/produtos-copo-termico.json';
+import dados from '../../data/produtos-espumador.json';
 
-const categoria = dados.categorias.find((c) => c.id === 'copo-termico');
+const categoria = dados.categorias.find((c) => c.id === 'espumador-leite');
 const produtos = categoria.produtos;
 
 const breadcrumbSchema = {
@@ -11,22 +11,22 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
-    { "@type": "ListItem", position: 2, name: "Copo térmico", item: "https://cafe.dicasinteligentes.com/copo-termico/" },
+    { "@type": "ListItem", position: 2, name: "Espumador de leite", item: "https://cafe.dicasinteligentes.com/espumador-leite/" },
   ],
 };
 
 const faq = [
   {
-    pergunta: "Copo térmico realmente mantém o café quente por horas?",
-    resposta: "Mantém, mas não pelo mesmo tempo que uma garrafa térmica de verdade. O segredo é a parede dupla a vácuo: sem ela, é só um copo de inox comum, que esfria quase tão rápido quanto um copo qualquer. Os 3 produtos desta lista têm parede dupla de verdade.",
+    pergunta: "Espumador portátil (mini mixer) faz o mesmo que um de bancada?",
+    resposta: "Faz a espuma, mas não aquece o leite. Se você quer cappuccino ou latte com leite quente, precisa esquentar o leite separado (microondas ou fogão) antes de usar o mini mixer. O modelo de bancada resolve os dois passos numa etapa só.",
   },
   {
-    pergunta: "Copo grande (500-600ml) ou xícara pequena (160ml), qual escolher?",
-    resposta: "Depende do uso. Se é pra levar café na rua ou no carro, o copo de 500-600ml compensa mais, rende mais líquido e tem tampa anti-vazamento. Se é pra tomar expresso em casa, a xícara pequena de 160ml é mais elegante e não sobra café esfriando depois que você já bebeu o que queria.",
+    pergunta: "Qualquer leite espuma bem?",
+    resposta: "Não. Leite integral costuma espumar melhor que desnatado, porque a gordura ajuda a estabilizar a espuma. Leites vegetais variam bastante — aveia costuma espumar razoavelmente bem, outros menos.",
   },
   {
-    pergunta: "Vale a pena pagar mais caro numa marca conhecida?",
-    resposta: "Só se durabilidade a longo prazo pesar mais que economia agora. O copo mais barato desta lista (genérico, R$26-47) já tem quase 600 avaliações reais e nota 4,3, mas tem menos histórico de marca que o WOLFF. Pra uso ocasional, o genérico resolve. Pra usar todo dia por anos, marca estabelecida costuma compensar.",
+    pergunta: "Vale a pena o modelo mais caro entre os de bancada?",
+    resposta: "A diferença de preço entre os 3 modelos de bancada desta lista é pequena (R$280 a R$337). A Cremeira tem a nota mais alta, mas o Oster e o Black+Decker têm mais avaliações acumuladas — nenhum se destaca tanto a ponto de ser óbvio, vale comparar o que tiver disponível no momento.",
   },
 ];
 
@@ -41,20 +41,19 @@ const faqSchema = {
 };
 ---
 <Layout
-  title="Copo térmico para café: qual escolher"
-  description="Copos e canecas térmicas pra café pesquisados na Amazon, com preço, nota e o defeito real de cada um, pra escolher sem chute."
-  image="/images/produtos/copo-termico-wolff-600ml-cafe.jpg"
+  title="Espumador de leite: qual escolher"
+  description="Espumadores de leite pesquisados na Amazon, com preço, nota e o defeito real de cada um, comparando modelo de bancada e portátil, pra escolher sem chute."
+  image="/images/produtos/cremeira-leite-eletrica-127v.png"
 >
   <p><a href="/">← Início</a></p>
-  <h1>Copo térmico para café: qual escolher</h1>
+  <h1>Espumador de leite: qual escolher</h1>
   <p class="atualizado">Todos os produtos abaixo foram pesquisados na Amazon, com preço, nota e avaliações reais.</p>
 
   <p>
-    Café esfriando antes de terminar é o problema mais comum de quem
-    trabalha ou viaja com a bebida. Um copo térmico de verdade (parede
-    dupla a vácuo) resolve isso, mas nem todo "copo térmico" anunciado
-    realmente tem essa tecnologia. Os produtos abaixo estão em ordem de
-    preço, dos três com parede dupla comprovada.
+    Espumador errado é espuma que desmancha rápido ou aparelho que só bate,
+    sem esquentar o leite de verdade. Nessa lista comparamos modelo de
+    bancada (aquece e espuma) e modelo portátil (só espuma, bem mais
+    barato).
   </p>
 
   <section class="como-escolhemos">
@@ -97,14 +96,12 @@ const faqSchema = {
   <section class="honestidade">
     <h2>Onde vale gastar mais, onde não faz diferença</h2>
     <p>
-      O copo genérico de R$26-47 e o WOLFF de R$49-64 têm a mesma tecnologia
-      (parede dupla, tampa anti-vazamento): a diferença de preço é
-      sobretudo confiança de marca e histórico de avaliações (588 contra
-      quase 1.800). Se você só quer testar se copo térmico faz diferença no
-      seu dia, o genérico já resolve. A xícara de 160ml não compete com os
-      outros dois: é pra outro uso (mesa, expresso em casa), não pra levar
-      na rua, então não faz sentido comparar preço entre ela e os copos
-      grandes.
+      O salto de R$25 (mini mixer) pra R$280+ (modelos de bancada) é sobre
+      aquecer o leite automaticamente, não sobre qualidade da espuma em si
+      — o mini mixer bem usado espuma bem, só exige o passo extra de
+      esquentar o leite. Entre os 3 modelos de bancada, a diferença de
+      preço é pequena e nenhum se destaca disparado — compare o que
+      estiver disponível na hora da compra.
     </p>
   </section>
 
@@ -116,15 +113,17 @@ const faqSchema = {
 
   <p class="cluster-link">
     Veja também:
-    <a href="/copo-termico/erros-comuns/">os erros mais comuns escolhendo copo térmico →</a>
+    <a href="/espumador-leite/erros-comuns/">os erros mais comuns fazendo espuma de leite →</a>
     ·
-    <a href="/copo-termico/por-orcamento/">os mesmos copos por orçamento →</a>
+    <a href="/espumador-leite/por-orcamento/">os mesmos espumadores por orçamento →</a>
     ·
-    <a href="/copo-termico/comparativo-top3/">comparativo Top 3 lado a lado →</a>
+    <a href="/espumador-leite/comparativo-top3/">comparativo Top 3 lado a lado →</a>
     ·
     <a href="/cafeteira/">cafeteira elétrica: qual escolher →</a>
     ·
-    <a href="/moedor-de-cafe/">moedor de café: qual escolher →</a>
+    <a href="/prensa-francesa/">prensa francesa: qual escolher →</a>
+    ·
+    <a href="/chaleira-eletrica/">chaleira elétrica: qual escolher →</a>
   </p>
 
   <section class="faq">

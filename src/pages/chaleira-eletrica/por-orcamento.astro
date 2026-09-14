@@ -1,0 +1,75 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProdutoCard from '../../components/ProdutoCard.astro';
+import dados from '../../data/produtos-chaleira.json';
+
+const categoria = dados.categorias.find((c) => c.id === 'chaleira-eletrica');
+const produtos = [...categoria.produtos].sort((a, b) => a.precoMin - b.precoMin);
+
+const faixas = [
+  { titulo: "Até R$100", min: 0, max: 100 },
+  { titulo: "R$100 a R$300", min: 100, max: 300 },
+  { titulo: "Acima de R$300", min: 300, max: Infinity },
+];
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Chaleira elétrica", item: "https://cafe.dicasinteligentes.com/chaleira-eletrica/" },
+    { "@type": "ListItem", position: 3, name: "Por orçamento", item: "https://cafe.dicasinteligentes.com/chaleira-eletrica/por-orcamento/" },
+  ],
+};
+---
+<Layout
+  title="Chaleira elétrica por orçamento"
+  description="As mesmas chaleiras elétricas separadas por faixa de preço, do mais barata à mais completa."
+>
+  <p><a href="/chaleira-eletrica/">← Chaleira elétrica</a></p>
+  <h1>Chaleira elétrica por orçamento</h1>
+  <p>Os mesmos produtos do guia principal, separados por faixa de preço.</p>
+
+  <section class="raciocinio">
+    <h2>O que muda de verdade entre as faixas</h2>
+    <p>
+      Até R$100 a mais barata resolve só esquentar água em geral: sem bico
+      de ganso e sem termômetro, não serve pra quem quer técnica de café
+      coado. Na faixa de R$100 a R$300 a Cadence é a mais avaliada, mas
+      não é bico de ganso, despeja mais rápido e menos controlado, não
+      ideal pra V60 ou Chemex; a opção com termômetro integrado da mesma
+      faixa é analógica, você monitora e desliga na hora certa
+      manualmente. Acima de R$300, a Cocinare FLOW é de longe a mais cara,
+      quase 5x o preço da mais barata, e só compensa se controle de
+      temperatura de precisão (±1°C) for prioridade real no seu método.
+    </p>
+  </section>
+
+  {faixas.map((faixa) => {
+    const produtosFaixa = produtos.filter((p) => p.precoMin >= faixa.min && p.precoMin < faixa.max);
+    return produtosFaixa.length > 0 && (
+      <section class="faixa">
+        <h2>{faixa.titulo}</h2>
+        {produtosFaixa.map((produto) => <ProdutoCard produto={produto} />)}
+      </section>
+    );
+  })}
+
+  <p class="cta-final">
+    Quer ver o comparativo completo?
+    <a href="/chaleira-eletrica/">Volte pro guia completo →</a>
+  </p>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .faixa { margin: 2rem 0; }
+    .faixa h2 { font-size: 1.1rem; margin: 0 0 1rem; color: var(--cor-acento); }
+    .cta-final {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cor-borda);
+      font-weight: 600;
+    }
+  </style>
+</Layout>

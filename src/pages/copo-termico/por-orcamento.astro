@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProdutoCard from '../../components/ProdutoCard.astro';
+import dados from '../../data/produtos-copo-termico.json';
+
+const categoria = dados.categorias.find((c) => c.id === 'copo-termico');
+const produtos = [...categoria.produtos].sort((a, b) => a.precoMin - b.precoMin);
+
+const faixas = [
+  { titulo: "Até R$40", min: 0, max: 40 },
+  { titulo: "R$40 a R$60", min: 40, max: 60 },
+  { titulo: "Acima de R$60", min: 60, max: Infinity },
+];
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Copo térmico", item: "https://cafe.dicasinteligentes.com/copo-termico/" },
+    { "@type": "ListItem", position: 3, name: "Por orçamento", item: "https://cafe.dicasinteligentes.com/copo-termico/por-orcamento/" },
+  ],
+};
+---
+<Layout
+  title="Copo térmico por orçamento"
+  description="Os mesmos copos e canecas térmicas separados por faixa de preço, do mais barato ao mais avaliado."
+>
+  <p><a href="/copo-termico/">← Copo térmico</a></p>
+  <h1>Copo térmico por orçamento</h1>
+  <p>Os mesmos produtos do guia principal, separados por faixa de preço.</p>
+
+  <section class="raciocinio">
+    <h2>O que muda de verdade entre as faixas</h2>
+    <p>
+      Até R$40 você paga menos, mas é produto genérico, sem marca
+      conhecida por trás, então tem menos histórico de acabamento e
+      durabilidade a longo prazo pra confirmar. Na faixa de R$40 a R$60, o
+      WOLFF é o mais avaliado, mas a diferença dele pro mais barato é
+      sobretudo confiança de marca, não recurso extra de verdade, e a
+      xícara espresso da mesma faixa tem a nota mais alta, só que é de
+      160ml, xícara de mesa, não serve pra quem quer levar café pra rua.
+    </p>
+  </section>
+
+  {faixas.map((faixa) => {
+    const produtosFaixa = produtos.filter((p) => p.precoMin >= faixa.min && p.precoMin < faixa.max);
+    return produtosFaixa.length > 0 && (
+      <section class="faixa">
+        <h2>{faixa.titulo}</h2>
+        {produtosFaixa.map((produto) => <ProdutoCard produto={produto} />)}
+      </section>
+    );
+  })}
+
+  <p class="cta-final">
+    Quer ver o comparativo completo?
+    <a href="/copo-termico/">Volte pro guia completo →</a>
+  </p>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .faixa { margin: 2rem 0; }
+    .faixa h2 { font-size: 1.1rem; margin: 0 0 1rem; color: var(--cor-acento); }
+    .cta-final {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cor-borda);
+      font-weight: 600;
+    }
+  </style>
+</Layout>

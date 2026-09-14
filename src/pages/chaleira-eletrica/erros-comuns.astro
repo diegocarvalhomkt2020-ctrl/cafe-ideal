@@ -1,0 +1,81 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Chaleira elétrica", item: "https://cafe.dicasinteligentes.com/chaleira-eletrica/" },
+    { "@type": "ListItem", position: 3, name: "Erros comuns", item: "https://cafe.dicasinteligentes.com/chaleira-eletrica/erros-comuns/" },
+  ],
+};
+
+const erros = [
+  {
+    titulo: "Comprar bico comum achando que serve igual pro café coado",
+    texto: "Bico grosso despeja rápido demais e descontrola a extração. Se você faz café coado com técnica (V60, Chemex), o bico de ganso faz diferença real, não é só estética.",
+  },
+  {
+    titulo: "Despejar a água fervendo direto no café",
+    texto: "Água a 100°C queima o café e deixa gosto amargo demais. O ideal pra maioria dos métodos é entre 90-96°C — espere uns 30 segundos depois de ferver antes de despejar.",
+  },
+  {
+    titulo: "Não descalcificar a chaleira periodicamente",
+    texto: "Resíduo de cálcio da água se acumula com o tempo, principalmente em água mais dura. Isso pode alterar o sabor do café e reduzir a vida útil da resistência.",
+  },
+  {
+    titulo: "Achar que controle eletrônico de temperatura é indispensável",
+    texto: "Ajuda, mas não é obrigatório. Um termômetro separado (ou integrado, como um dos modelos desta lista) resolve bem se você não quer pagar o preço do controle automático.",
+  },
+  {
+    titulo: "Deixar água parada na chaleira por dias",
+    texto: "Água parada por muito tempo pode alterar o sabor e favorecer acúmulo de resíduo. Esvazie e lave a chaleira quando não for usar por alguns dias.",
+  },
+];
+---
+<Layout
+  title="Erros comuns escolhendo chaleira elétrica"
+  description="Os erros mais comuns na hora de escolher e usar chaleira elétrica pro café coado, e como evitar cada um."
+>
+  <p><a href="/chaleira-eletrica/">← Chaleira elétrica</a></p>
+  <h1>Erros comuns escolhendo chaleira elétrica</h1>
+  <p class="atualizado">Atualizado em setembro de 2026</p>
+
+  <p>
+    A maioria dos problemas com chaleira elétrica pro café coado não é
+    sobre o produto ser ruim, é sobre escolher o modelo errado pra técnica
+    ou usar sem os cuidados certos. Os erros abaixo são os que mais
+    aparecem em avaliação e reclamação real de comprador.
+  </p>
+
+  <section class="erros">
+    {erros.map((erro, i) => (
+      <div class="erro-item">
+        <h2>{i + 1}. {erro.titulo}</h2>
+        <p>{erro.texto}</p>
+      </div>
+    ))}
+  </section>
+
+  <p class="cta-final">
+    Quer ver os produtos reais que pesquisamos?
+    <a href="/chaleira-eletrica/">Volte pro guia completo →</a>
+  </p>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .atualizado { color: var(--cor-texto-suave); font-size: 0.9rem; }
+    .erros { margin: 2rem 0; }
+    .erro-item { margin-bottom: 1.75rem; }
+    .erro-item h2 { font-size: 1.1rem; margin: 0 0 0.4rem; }
+    .erro-item p { margin: 0; color: var(--cor-texto-suave); }
+    .cta-final {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cor-borda);
+      font-weight: 600;
+    }
+  </style>
+</Layout>

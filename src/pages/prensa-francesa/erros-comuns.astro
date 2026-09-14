@@ -1,0 +1,81 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Prensa francesa", item: "https://cafe.dicasinteligentes.com/prensa-francesa/" },
+    { "@type": "ListItem", position: 3, name: "Erros comuns", item: "https://cafe.dicasinteligentes.com/prensa-francesa/erros-comuns/" },
+  ],
+};
+
+const erros = [
+  {
+    titulo: "Usar café moído fino demais",
+    texto: "Café moído fino (tipo pro coado) passa pelo filtro de metal da prensa e deixa a bebida com muita borra. Use moagem grossa, própria pra prensa francesa.",
+  },
+  {
+    titulo: "Despejar água fervendo direto no pó",
+    texto: "Assim como no café coado, água muito quente queima o pó e deixa amargo. Espere uns 30 segundos depois de ferver antes de despejar.",
+  },
+  {
+    titulo: "Prensar rápido demais ou deixar tempo de infusão insuficiente",
+    texto: "4 minutos de infusão antes de prensar é o padrão pra maioria dos grãos. Prensar cedo demais resulta em café fraco; prensar tarde demais deixa amargo por excesso de extração.",
+  },
+  {
+    titulo: "Mudar a temperatura da água bruscamente no vidro",
+    texto: "Vidro fino (comum em marca popular) pode trincar com choque térmico — água fervendo direto num vidro frio de geladeira, por exemplo. Deixe o vidro em temperatura ambiente antes de usar.",
+  },
+  {
+    titulo: "Não limpar o êmbolo direito depois de usar",
+    texto: "Resíduo de café acumulado no filtro do êmbolo prejudica a filtragem da próxima vez, deixando ainda mais borra na xícara. Desmonte e limpe bem depois de cada uso.",
+  },
+];
+---
+<Layout
+  title="Erros comuns escolhendo prensa francesa"
+  description="Os erros mais comuns na hora de escolher e usar prensa francesa, e como evitar cada um."
+>
+  <p><a href="/prensa-francesa/">← Prensa francesa</a></p>
+  <h1>Erros comuns escolhendo prensa francesa</h1>
+  <p class="atualizado">Atualizado em setembro de 2026</p>
+
+  <p>
+    A maioria dos problemas com prensa francesa não é sobre o produto ser
+    ruim, é sobre a moagem errada ou o preparo sem os cuidados certos. Os
+    erros abaixo são os que mais aparecem em avaliação e reclamação real
+    de comprador.
+  </p>
+
+  <section class="erros">
+    {erros.map((erro, i) => (
+      <div class="erro-item">
+        <h2>{i + 1}. {erro.titulo}</h2>
+        <p>{erro.texto}</p>
+      </div>
+    ))}
+  </section>
+
+  <p class="cta-final">
+    Quer ver os produtos reais que pesquisamos?
+    <a href="/prensa-francesa/">Volte pro guia completo →</a>
+  </p>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .atualizado { color: var(--cor-texto-suave); font-size: 0.9rem; }
+    .erros { margin: 2rem 0; }
+    .erro-item { margin-bottom: 1.75rem; }
+    .erro-item h2 { font-size: 1.1rem; margin: 0 0 0.4rem; }
+    .erro-item p { margin: 0; color: var(--cor-texto-suave); }
+    .cta-final {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cor-borda);
+      font-weight: 600;
+    }
+  </style>
+</Layout>

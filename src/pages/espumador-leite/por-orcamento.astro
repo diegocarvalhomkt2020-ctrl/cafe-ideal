@@ -1,0 +1,75 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProdutoCard from '../../components/ProdutoCard.astro';
+import dados from '../../data/produtos-espumador.json';
+
+const categoria = dados.categorias.find((c) => c.id === 'espumador-leite');
+const produtos = [...categoria.produtos].sort((a, b) => a.precoMin - b.precoMin);
+
+const faixas = [
+  { titulo: "Até R$50", min: 0, max: 50 },
+  { titulo: "R$50 a R$300", min: 50, max: 300 },
+  { titulo: "Acima de R$300", min: 300, max: Infinity },
+];
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Espumador de leite", item: "https://cafe.dicasinteligentes.com/espumador-leite/" },
+    { "@type": "ListItem", position: 3, name: "Por orçamento", item: "https://cafe.dicasinteligentes.com/espumador-leite/por-orcamento/" },
+  ],
+};
+---
+<Layout
+  title="Espumador de leite por orçamento"
+  description="Os mesmos espumadores de leite separados por faixa de preço, do portátil mais barato ao modelo de bancada."
+>
+  <p><a href="/espumador-leite/">← Espumador de leite</a></p>
+  <h1>Espumador de leite por orçamento</h1>
+  <p>Os mesmos produtos do guia principal, separados por faixa de preço.</p>
+
+  <section class="raciocinio">
+    <h2>O que muda de verdade entre as faixas</h2>
+    <p>
+      Até R$50 o mini mixer portátil só bate/espuma, não aquece o leite
+      como os modelos de bancada, pra espuma quente precisa esquentar o
+      leite separado antes. Na faixa de R$50 a R$300, Oster e Black+Decker
+      custam praticamente igual, mas nenhum dos dois tem a nota mais alta
+      da categoria: a Oster (4,4) não é a melhor nota mesmo sendo marca
+      conhecida, e a Black+Decker (4,2) é a nota mais baixa de toda a
+      lista, mesmo com bom volume de avaliações. Acima de R$300, a
+      Cremeira é a mais cara entre os modelos de bancada e tem menos
+      avaliações que as outras duas pra confirmar o histórico.
+    </p>
+  </section>
+
+  {faixas.map((faixa) => {
+    const produtosFaixa = produtos.filter((p) => p.precoMin >= faixa.min && p.precoMin < faixa.max);
+    return produtosFaixa.length > 0 && (
+      <section class="faixa">
+        <h2>{faixa.titulo}</h2>
+        {produtosFaixa.map((produto) => <ProdutoCard produto={produto} />)}
+      </section>
+    );
+  })}
+
+  <p class="cta-final">
+    Quer ver o comparativo completo?
+    <a href="/espumador-leite/">Volte pro guia completo →</a>
+  </p>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .faixa { margin: 2rem 0; }
+    .faixa h2 { font-size: 1.1rem; margin: 0 0 1rem; color: var(--cor-acento); }
+    .cta-final {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cor-borda);
+      font-weight: 600;
+    }
+  </style>
+</Layout>
