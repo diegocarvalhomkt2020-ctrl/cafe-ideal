@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "slug": "por-que-pesar-o-cafe-muda-o-sabor",
+      "titulo": "Por que pesar o café muda o sabor mais do que parece",
+      "resumo": "A diferença real entre medir café por colher e por peso, e quando vale a pena usar uma balança de precisão.",
+      "dataPublicacao": "2026-09-14",
+      "corpo": [
+        { "tipo": "paragrafo", "texto": "Colher de café não é uma medida confiável: o grão moído mais fino ou mais grosso, mais compactado ou mais solto, muda o peso real da mesma colher cheia. Isso explica por que a mesma receita às vezes sai fraca e às vezes forte, mesmo usando \"a mesma quantidade\" visualmente." },
+        { "tipo": "subtitulo", "texto": "A proporção que os baristas usam" },
+        { "tipo": "paragrafo", "texto": "A referência mais usada é 1:16 (1 grama de café pra 16 gramas de água), que já está na nossa calculadora de proporção. Mas essa conta só funciona de verdade se o peso do pó for exato — por isso pesar em vez de usar colher é o que realmente muda o resultado, não só afinação de gosto pessoal." },
+        { "tipo": "subtitulo", "texto": "Quando vale a pena ter balança" },
+        { "tipo": "lista", "itens": [
+          "Se o café sai com sabor inconsistente de um dia pro outro, mesmo com o mesmo pó e a mesma máquina",
+          "Se você já ajustou moagem e temperatura e ainda não achou o ponto certo",
+          "Se prepara café coado, prensa francesa ou V60 com frequência — nesses métodos o peso pesa mais do que na cápsula"
+        ] }
+      ],
+      "produtoDestaque": {
+        "nome": "CADINA Balança de Café Barista Profissional com Temporizador",
+        "selo": "Escolha da Amazon",
+        "precoMin": 160,
+        "precoMax": 160,
+        "nota": 5.0,
+        "avaliacoes": 33,
+        "pros": [
+          "Nota máxima (5,0) com bom volume de avaliação (33), selo \"Escolha da Amazon\"",
+          "Precisão de 0,1g com temporizador automático (começa a contar quando detecta o líquido)",
+          "Liga e zera sozinha ao colocar peso acima de 100g, sem precisar apertar botão toda vez"
+        ],
+        "contra": "33 avaliações é sólido, mas ainda é bem menos que balança de cozinha genérica multiuso, que tem milhares — é categoria mais nova e específica. Também é maior que balança comum de bolso, pensada pra ficar fixa na bancada.",
+        "paraQuem": "Pra quem prepara café coado, prensa francesa ou V60 com frequência e quer consistência real",
+        "linkAmazon": "https://www.amazon.com.br/dp/B0FYCKC7V3?tag=dicasinteli05-20"
+      },
+      "pilarRelacionado": { "href": "/ferramentas/proporcao-de-cafe/", "label": "a calculadora de proporção de café" }
+    }
+  ]
+}
