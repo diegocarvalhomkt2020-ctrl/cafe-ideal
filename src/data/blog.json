@@ -3,18 +3,22 @@
     {
       "slug": "por-que-pesar-o-cafe-muda-o-sabor",
       "titulo": "Por que pesar o café muda o sabor mais do que parece",
-      "resumo": "A diferença real entre medir café por colher e por peso, e quando vale a pena usar uma balança de precisão.",
+      "resumo": "A diferença real entre medir café por colher e por peso, como a proporção muda por método de preparo, e quando vale a pena usar uma balança de precisão.",
       "dataPublicacao": "2026-09-14",
       "corpo": [
         { "tipo": "paragrafo", "texto": "Colher de café não é uma medida confiável: o grão moído mais fino ou mais grosso, mais compactado ou mais solto, muda o peso real da mesma colher cheia. Isso explica por que a mesma receita às vezes sai fraca e às vezes forte, mesmo usando \"a mesma quantidade\" visualmente." },
         { "tipo": "subtitulo", "texto": "A proporção que os baristas usam" },
         { "tipo": "paragrafo", "texto": "A referência mais usada é 1:16 (1 grama de café pra 16 gramas de água), que já está na nossa calculadora de proporção. Mas essa conta só funciona de verdade se o peso do pó for exato — por isso pesar em vez de usar colher é o que realmente muda o resultado, não só afinação de gosto pessoal." },
+        { "tipo": "subtitulo", "texto": "A proporção muda por método" },
+        { "tipo": "paragrafo", "texto": "1:16 é um ponto de partida pro café coado tradicional, mas não é regra fixa pra tudo. Espresso usa proporção bem mais concentrada, próxima de 1:2. Prensa francesa costuma ficar perto do coado, entre 1:15 e 1:17, dependendo da força que você prefere. Já cápsula não dá pra ajustar, porque a dose de pó já vem fechada de fábrica — é o único método em que pesar não muda nada." },
         { "tipo": "subtitulo", "texto": "Quando vale a pena ter balança" },
         { "tipo": "lista", "itens": [
           "Se o café sai com sabor inconsistente de um dia pro outro, mesmo com o mesmo pó e a mesma máquina",
           "Se você já ajustou moagem e temperatura e ainda não achou o ponto certo",
           "Se prepara café coado, prensa francesa ou V60 com frequência — nesses métodos o peso pesa mais do que na cápsula"
-        ] }
+        ] },
+        { "tipo": "subtitulo", "texto": "Erro comum além da colher" },
+        { "tipo": "paragrafo", "texto": "Pesar o pó certo não resolve tudo sozinho. Moagem errada pro método (moagem fina demais numa prensa francesa, por exemplo) estraga o resultado mesmo com peso perfeito. Água muito quente também queima o café e deixa amargo, independente da proporção. O peso é a base, mas moagem e temperatura completam a equação." }
       ],
       "produtoDestaque": {
         "nome": "CADINA Balança de Café Barista Profissional com Temporizador",
@@ -32,6 +36,20 @@
         "paraQuem": "Pra quem prepara café coado, prensa francesa ou V60 com frequência e quer consistência real",
         "linkAmazon": "https://www.amazon.com.br/dp/B0FYCKC7V3?tag=dicasinteli05-20"
       },
+      "faq": [
+        {
+          "pergunta": "Balança de cozinha comum serve, ou precisa ser balança de café?",
+          "resposta": "Uma balança de cozinha comum com precisão de 1g já ajuda bastante e resolve o principal problema (colher imprecisa). A diferença da balança específica de café é conveniência: timer automático, detecção de líquido, zerar sozinha — não é obrigatório, mas facilita bastante no dia a dia."
+        },
+        {
+          "pergunta": "Preciso pesar a água também, ou só o pó?",
+          "resposta": "O ideal é pesar os dois, porque é assim que a proporção fecha certo. Mas se for escolher só um pra começar, pesar o pó já é o maior ganho — é onde o erro da colher pesa mais."
+        },
+        {
+          "pergunta": "Vale a pena pra quem só toma café de cápsula?",
+          "resposta": "Não muito. Na cápsula a dose de pó já vem fechada de fábrica, então pesar não muda o resultado. Balança importa mais pra quem prepara café coado, prensa francesa, V60 ou espresso manual, onde você controla a quantidade."
+        }
+      ],
       "pilarRelacionado": { "href": "/ferramentas/proporcao-de-cafe/", "label": "a calculadora de proporção de café" }
     }
   ]
