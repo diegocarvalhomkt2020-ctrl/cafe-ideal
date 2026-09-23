@@ -1,19 +1,9 @@
 ---
-import blogDados from '../data/blog.json';
-
 const { title, description, image } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const imagemAbsoluta = new URL(image || '/images/produtos/electrolux-ecm10-cafeteira-filtro.png', Astro.site).toString();
 const pathname = Astro.url.pathname;
 const ehAtual = (href) => pathname === href || (href !== '/' && pathname.startsWith(href));
-
-const ultimoPostData = blogDados.posts
-  .map((p) => p.dataPublicacao)
-  .sort()
-  .at(-1);
-const ultimoPostDataCurta = ultimoPostData
-  ? new Date(ultimoPostData + 'T00:00:00').toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })
-  : null;
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -59,7 +49,7 @@ const ultimoPostDataCurta = ultimoPostData
         </button>
         <nav id="menu-principal">
           <a href="/ferramentas/proporcao-de-cafe/" aria-current={ehAtual('/ferramentas/') ? 'page' : undefined}>Proporção de café</a>
-          <a href="/blog/" aria-current={ehAtual('/blog/') ? 'page' : undefined}>Blog{ultimoPostDataCurta && <span class="blog-data">{ultimoPostDataCurta}</span>}</a>
+          <a href="/blog/" aria-current={ehAtual('/blog/') ? 'page' : undefined}>Blog</a>
           <a href="/guia-gratis/" aria-current={ehAtual('/guia-gratis/') ? 'page' : undefined}>Guia grátis</a>
           <a class="nav-ver-todos" href="/" aria-current={ehAtual('/') ? 'page' : undefined}>Ver todos ›</a>
         </nav>
@@ -192,14 +182,6 @@ const ultimoPostDataCurta = ultimoPostData
         margin-left: 0.75rem;
       }
       .topo nav a.nav-ver-todos:hover { border-color: var(--cor-acento); color: var(--cor-acento); }
-      .blog-data {
-        display: inline-block;
-        margin-left: 0.35rem;
-        font-size: 0.68rem;
-        font-weight: 500;
-        color: var(--cor-texto-suave);
-        opacity: 0.75;
-      }
       .topo nav { display: flex; flex-wrap: wrap; align-items: center; }
       @media (max-width: 940px) {
         .menu-toggle { display: block; }
