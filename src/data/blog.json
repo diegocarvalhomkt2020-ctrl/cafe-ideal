@@ -1,24 +1,143 @@
 {
   "posts": [
     {
+      "slug": "como-descalcificar-a-cafeteira",
+      "titulo": "Como descalcificar a cafeteira e quando fazer isso",
+      "resumo": "Por que o calcário da água atrapalha a cafeteira, os sinais de que já está na hora e como fazer a descalcificação sem estragar a máquina.",
+      "dataPublicacao": "2026-09-24",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Toda cafeteira que esquenta água vai acumulando calcário ao longo do tempo, principalmente em regiões de água dura, com muito cálcio e magnésio. Esse resíduo entope os canais por dentro e você percebe no dia a dia: o café passa mais devagar, a máquina fica mais barulhenta e a qualidade da bebida cai."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Sinais de que está na hora"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "O café sai mais devagar ou em menor quantidade que antes",
+            "A máquina está mais barulhenta ao funcionar",
+            "Aparece crosta esbranquiçada no reservatório ou na parte de dentro",
+            "O café ficou com gosto diferente mesmo com o mesmo pó e a mesma dose"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Cada tipo de máquina tem seu jeito"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Máquinas de café expresso, com ou sem cápsula, geralmente pedem um produto próprio pra descalcificação, seguindo o passo a passo do manual. Já a cafeteira elétrica de filtro comum costuma ter instrução própria: alguns manuais indicam soluções caseiras, como vinagre ou ácido cítrico diluído, e outros indicam produto específico. Antes de usar qualquer coisa, leia o manual da sua máquina, porque um método errado pode danificar a máquina ou anular a garantia."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O enxágue é parte do processo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Descalcificante é um ácido, então depois do ciclo é preciso passar água limpa várias vezes até não sobrar resíduo no circuito. Uma compradora que usou o produto que destacamos abaixo contou que a água saiu leitosa no primeiro enxágue, levemente turva no segundo e só transparente no terceiro. Se o seu manual indicar um número de enxágues, siga o do manual, e na dúvida faça mais um."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Como evitar que volte tão rápido"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Usar água filtrada ou mineral tende a reduzir o acúmulo de calcário, principalmente em regiões de água dura. Esvaziar o reservatório quando a cafeteira vai ficar parada por vários dias também ajuda, porque água parada favorece o depósito. E vale registrar a data da última descalcificação, pra não depender da memória."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "De quanto em quanto tempo?"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Depende da dureza da água e de quanto você usa a máquina, então o intervalo certo é o que o manual da sua cafeteira indica. Na prática, os sinais acima são o aviso mais confiável de que passou da hora."
+        }
+      ],
+      "produtoDestaque": {
+        "nome": "Descalcificante Descalux para Cafeteira Expressa",
+        "selo": "Nº 11 em acessórios de cafeteira",
+        "precoMin": 33,
+        "precoMax": 33,
+        "nota": 4.6,
+        "avaliacoes": 2734,
+        "pros": [
+          "Nota 4,6 com 2.734 avaliações, 76% delas de 5 estrelas",
+          "Indicado pra máquina de café expresso com ou sem cápsula, e o título cita marcas como Nespresso, Três Corações, Oster, Saeco e Philips",
+          "Um comprador regular conta que cumpre a função a um custo mais acessível que o produto indicado pelo fabricante da máquina"
+        ],
+        "contra": "Vem 1 sachê de 22 g, que serve pra um ciclo de descalcificação, então o preço é por uso pontual. É um ácido e exige enxágue completo depois: uma compradora precisou de 3 enxágues até a água sair transparente. Não é a solução pra cafeteira elétrica de filtro comum sem conferir o manual antes.",
+        "paraQuem": "Pra máquina de café expresso ou de cápsula. Pra cafeteira de filtro, confira antes o que o manual do seu modelo indica.",
+        "linkAmazon": "https://www.amazon.com.br/dp/B083SSL3PD?tag=dicasinteli05-20"
+      },
+      "faq": [
+        {
+          "pergunta": "Posso usar vinagre pra descalcificar qualquer cafeteira?",
+          "resposta": "Não em qualquer uma. Alguns manuais de cafeteira de filtro indicam vinagre diluído, mas em máquinas de cápsula e expresso o ácido do vinagre pode atacar partes internas e deixar cheiro. O certo é seguir o que o manual do seu modelo diz."
+        },
+        {
+          "pergunta": "Descalcificar a cafeteira muda o gosto do café?",
+          "resposta": "Pode melhorar. Com menos calcário, a água passa melhor pelo circuito e a extração fica mais regular. Um comprador do produto que destacamos relatou até uma espuma melhor no café depois do processo. Isso é o relato de um usuário, não uma garantia."
+        },
+        {
+          "pergunta": "Com que frequência descalcificar?",
+          "resposta": "Depende da dureza da água e do uso. Siga o intervalo do manual da sua cafeteira e, na dúvida, repare nos sinais: café mais lento, máquina barulhenta e crosta branca no reservatório."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/cafeteira/",
+        "label": "cafeteira elétrica"
+      },
+      "imagem": "/images/blog/como-descalcificar-a-cafeteira.png"
+    },
+    {
       "slug": "por-que-pesar-o-cafe-muda-o-sabor",
       "titulo": "Por que pesar o café muda o sabor mais do que parece",
       "resumo": "A diferença real entre medir café por colher e por peso, como a proporção muda por método de preparo, e quando vale a pena usar uma balança de precisão.",
       "dataPublicacao": "2026-09-14",
       "corpo": [
-        { "tipo": "paragrafo", "texto": "Colher de café não é uma medida confiável: o grão moído mais fino ou mais grosso, mais compactado ou mais solto, muda o peso real da mesma colher cheia. Isso explica por que a mesma receita às vezes sai fraca e às vezes forte, mesmo usando \"a mesma quantidade\" visualmente." },
-        { "tipo": "subtitulo", "texto": "A proporção que os baristas usam" },
-        { "tipo": "paragrafo", "texto": "A referência mais usada é 1:16 (1 grama de café pra 16 gramas de água), que já está na nossa calculadora de proporção. Mas essa conta só funciona de verdade se o peso do pó for exato. Por isso, pesar em vez de usar colher é o que realmente muda o resultado, não só afinação de gosto pessoal." },
-        { "tipo": "subtitulo", "texto": "A proporção muda por método" },
-        { "tipo": "paragrafo", "texto": "1:16 é um ponto de partida pro café coado tradicional, mas não é regra fixa pra tudo. Espresso usa proporção bem mais concentrada, próxima de 1:2. Prensa francesa costuma ficar perto do coado, entre 1:15 e 1:17, dependendo da força que você prefere. Já cápsula não dá pra ajustar, porque a dose de pó já vem fechada de fábrica, e é o único método em que pesar não muda nada." },
-        { "tipo": "subtitulo", "texto": "Quando vale a pena ter balança" },
-        { "tipo": "lista", "itens": [
-          "Se o café sai com sabor inconsistente de um dia pro outro, mesmo com o mesmo pó e a mesma máquina",
-          "Se você já ajustou moagem e temperatura e ainda não achou o ponto certo",
-          "Se prepara café coado, prensa francesa ou V60 com frequência, porque nesses métodos o peso pesa mais do que na cápsula"
-        ] },
-        { "tipo": "subtitulo", "texto": "Erro comum além da colher" },
-        { "tipo": "paragrafo", "texto": "Pesar o pó certo não resolve tudo sozinho. Moagem errada pro método (moagem fina demais numa prensa francesa, por exemplo) estraga o resultado mesmo com peso perfeito. Água muito quente também queima o café e deixa amargo, independente da proporção. O peso é a base, mas moagem e temperatura completam a equação." }
+        {
+          "tipo": "paragrafo",
+          "texto": "Colher de café não é uma medida confiável: o grão moído mais fino ou mais grosso, mais compactado ou mais solto, muda o peso real da mesma colher cheia. Isso explica por que a mesma receita às vezes sai fraca e às vezes forte, mesmo usando \"a mesma quantidade\" visualmente."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "A proporção que os baristas usam"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "A referência mais usada é 1:16 (1 grama de café pra 16 gramas de água), que já está na nossa calculadora de proporção. Mas essa conta só funciona de verdade se o peso do pó for exato. Por isso, pesar em vez de usar colher é o que realmente muda o resultado, não só afinação de gosto pessoal."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "A proporção muda por método"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "1:16 é um ponto de partida pro café coado tradicional, mas não é regra fixa pra tudo. Espresso usa proporção bem mais concentrada, próxima de 1:2. Prensa francesa costuma ficar perto do coado, entre 1:15 e 1:17, dependendo da força que você prefere. Já cápsula não dá pra ajustar, porque a dose de pó já vem fechada de fábrica, e é o único método em que pesar não muda nada."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Quando vale a pena ter balança"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Se o café sai com sabor inconsistente de um dia pro outro, mesmo com o mesmo pó e a mesma máquina",
+            "Se você já ajustou moagem e temperatura e ainda não achou o ponto certo",
+            "Se prepara café coado, prensa francesa ou V60 com frequência, porque nesses métodos o peso pesa mais do que na cápsula"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Erro comum além da colher"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Pesar o pó certo não resolve tudo sozinho. Moagem errada pro método (moagem fina demais numa prensa francesa, por exemplo) estraga o resultado mesmo com peso perfeito. Água muito quente também queima o café e deixa amargo, independente da proporção. O peso é a base, mas moagem e temperatura completam a equação."
+        }
       ],
       "produtoDestaque": {
         "nome": "CADINA Balança de Café Barista Profissional com Temporizador",
@@ -50,7 +169,10 @@
           "resposta": "Não muito. Na cápsula a dose de pó já vem fechada de fábrica, então pesar não muda o resultado. Balança importa mais pra quem prepara café coado, prensa francesa, V60 ou espresso manual, onde você controla a quantidade."
         }
       ],
-      "pilarRelacionado": { "href": "/ferramentas/proporcao-de-cafe/", "label": "a calculadora de proporção de café" }
+      "pilarRelacionado": {
+        "href": "/ferramentas/proporcao-de-cafe/",
+        "label": "a calculadora de proporção de café"
+      }
     }
   ]
 }
