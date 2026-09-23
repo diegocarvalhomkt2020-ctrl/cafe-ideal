@@ -1,0 +1,72 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProdutoCard from '../../components/ProdutoCard.astro';
+import dados from '../../data/produtos-balanca.json';
+
+const categoria = dados.categorias.find((c) => c.id === 'balanca-de-cafe');
+const produtos = [...categoria.produtos].sort((a, b) => a.precoMin - b.precoMin);
+
+const faixas = [
+  { titulo: "Até R$50", min: 0, max: 50 },
+  { titulo: "R$50 a R$200", min: 50, max: 200 },
+  { titulo: "Acima de R$200", min: 200, max: Infinity },
+];
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Balança de café", item: "https://cafe.dicasinteligentes.com/balanca-de-cafe/" },
+    { "@type": "ListItem", position: 3, name: "Por orçamento", item: "https://cafe.dicasinteligentes.com/balanca-de-cafe/por-orcamento/" },
+  ],
+};
+---
+<Layout
+  title="Balança de café por orçamento"
+  description="As mesmas balanças de café separadas por faixa de preço, da mais barata à mais premium, e o que muda de verdade entre uma faixa e outra."
+>
+  <p><a href="/balanca-de-cafe/">← Balança de café</a></p>
+  <h1>Balança de café por orçamento</h1>
+  <p>Os mesmos produtos do guia principal, separados por faixa de preço.</p>
+
+  <section class="raciocinio">
+    <h2>O que muda de verdade entre as faixas</h2>
+    <p>
+      Até R$50 nenhuma das 4 desta lista entra (a mais barata é a
+      Biscuitt, ~R$90). De R$50 a R$200 estão 3 das 4: a Biscuitt não
+      tem temporizador, a Ultrean é a mais avaliada da lista inteira e a
+      CADINA tem a nota mais alta mas só 36 avaliações. Acima de R$200,
+      só a HARIO, mais de 3x o preço da Biscuitt, e só compensa se marca
+      de referência em café especial for prioridade real.
+    </p>
+  </section>
+
+  {faixas.map((faixa) => {
+    const produtosFaixa = produtos.filter((p) => p.precoMin >= faixa.min && p.precoMin < faixa.max);
+    return produtosFaixa.length > 0 && (
+      <section class="faixa">
+        <h2>{faixa.titulo}</h2>
+        {produtosFaixa.map((produto) => <ProdutoCard produto={produto} />)}
+      </section>
+    );
+  })}
+
+  <p class="cta-final">
+    Quer ver o comparativo completo?
+    <a href="/balanca-de-cafe/">Volte pro guia completo →</a>
+  </p>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .faixa { margin: 2rem 0; }
+    .faixa h2 { font-size: 1.1rem; margin: 0 0 1rem; color: var(--cor-acento); }
+    .cta-final {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cor-borda);
+      font-weight: 600;
+    }
+  </style>
+</Layout>

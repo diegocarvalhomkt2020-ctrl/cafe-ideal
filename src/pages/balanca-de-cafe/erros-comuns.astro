@@ -1,0 +1,80 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Balança de café", item: "https://cafe.dicasinteligentes.com/balanca-de-cafe/" },
+    { "@type": "ListItem", position: 3, name: "Erros comuns", item: "https://cafe.dicasinteligentes.com/balanca-de-cafe/erros-comuns/" },
+  ],
+};
+
+const erros = [
+  {
+    titulo: "Zerar (tarar) sem o recipiente em cima",
+    texto: "A função tara zera o peso do recipiente que já está na balança, não o peso total. Ponha o filtro ou o copo primeiro, tare, e só depois adicione o café. Fazer na ordem errada deixa a medida errada sem você perceber.",
+  },
+  {
+    titulo: "Usar em bancada desnivelada ou instável",
+    texto: "Balança de precisão sente qualquer desnível. Um pano dobrado embaixo ou uma bancada que balança já muda a leitura em alguns décimos de grama, o suficiente pra sair da proporção ideal.",
+  },
+  {
+    titulo: "Deixar a bateria ou as pilhas acabarem no meio do preparo",
+    texto: "Balança com pouca carga costuma perder precisão antes de desligar de vez. Se notar leitura estranha ou inconsistente, o primeiro passo é trocar a pilha ou carregar antes de desconfiar do produto.",
+  },
+  {
+    titulo: "Molhar o sensor de peso",
+    texto: "Respingo de água ou café direto no meio da balança pode danificar o sensor com o tempo. Limpe com pano levemente úmido, nunca lave embaixo da torneira, mesmo nos modelos com plataforma emborrachada.",
+  },
+  {
+    titulo: "Comparar leitura de balanças diferentes sem calibrar",
+    texto: "É normal duas balanças de marcas diferentes terem uma pequena divergência entre si. Isso não significa que uma está errada, então não troque a receita toda por causa de 1 ou 2 gramas de diferença entre aparelhos.",
+  },
+];
+---
+<Layout
+  title="Erros comuns escolhendo balança de café"
+  description="Os erros mais comuns na hora de escolher e usar balança de café, e como evitar cada um, com base em avaliações e reclamações reais."
+>
+  <p><a href="/balanca-de-cafe/">← Balança de café</a></p>
+  <h1>Erros comuns escolhendo prensa francesa</h1>
+  <p class="atualizado">Atualizado em setembro de 2026</p>
+
+  <p>
+    A maioria dos problemas com balança de café não é sobre o produto
+    ser ruim, é sobre o jeito de usar no dia a dia. Os erros abaixo são
+    os que mais aparecem em avaliação e reclamação real de comprador.
+  </p>
+
+  <section class="erros">
+    {erros.map((erro, i) => (
+      <div class="erro-item">
+        <h2>{i + 1}. {erro.titulo}</h2>
+        <p>{erro.texto}</p>
+      </div>
+    ))}
+  </section>
+
+  <p class="cta-final">
+    Quer ver os produtos reais que pesquisamos?
+    <a href="/balanca-de-cafe/">Volte pro guia completo →</a>
+  </p>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .atualizado { color: var(--cor-texto-suave); font-size: 0.9rem; }
+    .erros { margin: 2rem 0; }
+    .erro-item { margin-bottom: 1.75rem; }
+    .erro-item h2 { font-size: 1.1rem; margin: 0 0 0.4rem; }
+    .erro-item p { margin: 0; color: var(--cor-texto-suave); }
+    .cta-final {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cor-borda);
+      font-weight: 600;
+    }
+  </style>
+</Layout>
