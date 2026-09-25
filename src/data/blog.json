@@ -1,6 +1,81 @@
 {
   "posts": [
     {
+      "slug": "cafe-na-prensa-francesa",
+      "titulo": "Como fazer café na prensa francesa com pó comum",
+      "resumo": "Passo a passo da prensa francesa usando o pó de café que você já compra no mercado: medida em colheres, tempo e como evitar a borra no copo.",
+      "dataPublicacao": "2026-09-26",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "A prensa francesa faz um café encorpado com pouco esforço, e dá pra usar o pó de café que você já compra no mercado. O que muda com esse pó é o cuidado com o tempo e com a borra, porque ele é mais fino do que o ideal pra esse método."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Quanto pó e quanta água"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Uma referência simples é cerca de 1 colher de sopa cheia de pó pra cada 100 ml de água. Numa prensa de 350 ml, isso dá de 3 a 4 colheres. É um ponto de partida: se ficar forte demais, tire meia colher na próxima vez, e se ficar fraco, ponha meia a mais."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Passo a passo"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Ferva a água e espere de 30 a 60 segundos antes de usar. Água fervendo queima o café e deixa o gosto amargo",
+            "Coloque o pó na prensa e despeje só a água necessária pra molhar todo o pó. Espere 30 segundos",
+            "Complete com o resto da água, mexa uma vez com uma colher e tampe, sem empurrar o êmbolo",
+            "Espere de 3 a 4 minutos. Com pó fino de mercado, fique mais perto de 3",
+            "Empurre o êmbolo devagar, sem forçar",
+            "Sirva logo, sem deixar o café parado na prensa"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Por que sobra borra no copo"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O filtro da prensa é de metal e deixa passar partículas finas. Com pó de mercado, sempre vai sobrar um pouco de borra no fundo do copo. Servir devagar e deixar os últimos goles na prensa ajuda. Se isso incomoda, um moedor com moagem grossa resolve, mas não é obrigatório pra começar."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Erros que estragam o café"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Deixar o café na prensa depois de pronto: ele continua extraindo e fica amargo",
+            "Empurrar o êmbolo com força: levanta a borra e deixa o café mais turvo",
+            "Passar de 4 minutos com pó fino, que extrai mais rápido",
+            "Jogar a borra no ralo: ela entope, o lugar dela é o lixo orgânico"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Posso usar pó de café comum na prensa francesa?",
+          "resposta": "Pode. O resultado costuma ser um café mais turvo, com borra no fundo do copo, e mais amargo se passar do tempo. Por isso vale o tempo mais curto e o cuidado ao servir."
+        },
+        {
+          "pergunta": "Quantos minutos deixar o café na prensa?",
+          "resposta": "De 3 a 4 minutos é o ponto de partida. Menos deixa o café fraco e azedinho, mais deixa amargo. Prove e ajuste de 30 em 30 segundos até achar o seu ponto."
+        },
+        {
+          "pergunta": "Preciso de moedor pra usar prensa francesa?",
+          "resposta": "Não. Dá pra começar com o pó do mercado. O moedor ajuda porque permite uma moagem grossa, que deixa o café mais limpo, mas é um passo a mais e não é obrigatório."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/prensa-francesa/",
+        "label": "prensa francesa"
+      },
+      "imagem": "/images/blog/cafe-na-prensa-francesa.png"
+    },
+    {
       "slug": "como-descalcificar-a-cafeteira",
       "titulo": "Como descalcificar a cafeteira e quando fazer isso",
       "resumo": "Por que o calcário da água atrapalha a cafeteira, os sinais de que já está na hora e como fazer a descalcificação sem estragar a máquina.",
