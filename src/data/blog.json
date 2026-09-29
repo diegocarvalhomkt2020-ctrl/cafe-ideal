@@ -249,6 +249,101 @@
         "label": "a calculadora de proporção de café"
       },
       "imagem": "/images/blog/por-que-pesar-o-cafe-muda-o-sabor.png"
+    },
+    {
+      "slug": "moedor-de-cafe-manual-ou-eletrico",
+      "titulo": "Moedor de café manual ou elétrico: qual escolher",
+      "resumo": "A diferença entre moedor manual e elétrico, o que muda na moagem e o que os moedores elétricos que pesquisamos têm de contra.",
+      "imagem": "/images/blog/moedor-de-cafe-manual-ou-eletrico.png",
+      "dataPublicacao": "2026-09-29",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Moer o café na hora mantém mais aroma do que comprar o pó pronto. Mas manual ou elétrico? Depende de quanto café você faz por dia, do método e de quanto esforço aceita gastar. O que mais pesa na xícara, porém, não é ser manual ou elétrico: é o tipo de moagem."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Lâmina ou rebarba: a diferença que importa"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O moedor de lâmina, comum nos elétricos baratos, corta o grão como um liquidificador pequeno: é rápido, mas o pó sai com tamanhos misturados. O de rebarba esmaga o grão entre duas peças, e o pó sai mais uniforme, com ajuste do grau de moagem. Os manuais costumam ser de rebarba, e alguns elétricos também. Pó uniforme deixa o café mais equilibrado, porque partes finas demais amargam e grossas demais ficam fracas."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Quando o manual faz sentido"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Você faz de 1 a 2 xícaras por dia e não se importa de girar a manivela por um ou dois minutos",
+            "Quer ajustar a moagem pra mais de um método, como coador e prensa francesa",
+            "Quer levar pra viagem ou moer sem depender de tomada"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Quando o elétrico faz sentido"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Você faz café pra mais de uma pessoa ou várias xícaras por dia",
+            "Quer moer em segundos, sem esforço",
+            "Usa coador ou cafeteira elétrica, onde a moagem não precisa ser tão precisa"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O que os moedores elétricos que pesquisamos têm de contra"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Na nossa lista de moedores elétricos, os contras se repetem. O Cadence (R$90 a R$105, nota 4,7) não lava com água e, segundo mais de uma avaliação, a moagem não fica fina o bastante pra espresso. O Philco (R$140 a R$160) é de lâmina simples, sem ajuste de moagem, e a limpeza incomoda. O Hamilton Beach (R$300 a R$330) tem moagem ajustável e câmara removível pra lavar, mas a tampa com trava é apontada como difícil de fechar. Não pesquisamos moedor manual, então aqui não comparamos modelos nem preços de manual."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Como decidir"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Se você usa coador ou cafeteira elétrica e quer praticidade, um elétrico simples resolve. Se usa prensa francesa ou quer controle da moagem, procure um modelo que permita ajustar, manual ou elétrico."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Manutenção muda a durabilidade dos dois"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Moedor manual tem menos peça que pode quebrar, porque não depende de motor, e por isso costuma durar mais anos com o mesmo desempenho. No elétrico, o motor é o ponto mais provável de falhar com o tempo, principalmente em uso intenso todos os dias, então vale considerar isso além do preço na hora de escolher."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Ruído também entra na conta"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Moedor elétrico de lâmina costuma ser mais ruidoso que os de rebarba, e isso pesa pra quem mora em apartamento ou faz café de manhã bem cedo sem incomodar quem ainda dorme. O manual, por depender só da força da mão, é praticamente silencioso."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Moedor de lâmina serve pra café?",
+          "resposta": "Serve, principalmente pra coador. O pó sai menos uniforme e sem ajuste de moagem, então o café tende a ficar menos equilibrado do que com rebarba."
+        },
+        {
+          "pergunta": "Preciso moer o café na hora?",
+          "resposta": "Não é obrigatório, mas o pó perde aroma mais rápido que o grão, porque tem mais superfície exposta ao ar. Moer só o que vai usar preserva mais sabor."
+        },
+        {
+          "pergunta": "Dá pra lavar moedor elétrico com água?",
+          "resposta": "Nos que pesquisamos, quase nenhum. O Cadence e o Philco só permitem limpar por dentro com pincel ou pano. O Hamilton Beach é o que tem câmara removível pra lavar."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/moedor-de-cafe/",
+        "label": "moedor de café"
+      }
     }
   ]
 }
