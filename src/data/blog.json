@@ -344,6 +344,114 @@
         "href": "/moedor-de-cafe/",
         "label": "moedor de café"
       }
+    },
+    {
+      "slug": "como-guardar-cafe",
+      "titulo": "Como guardar o café pra não perder aroma e sabor",
+      "resumo": "O que estraga o café depois de aberto, onde e em que tipo de pote guardar e por que a geladeira não costuma ser boa ideia.",
+      "imagem": "/images/blog/como-guardar-cafe.png",
+      "dataPublicacao": "2026-10-02",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Café bom perde aroma rápido depois que o pacote é aberto. O que acelera isso são quatro coisas: ar, luz, calor e umidade. Guardar direito não faz milagre com café velho, mas evita que um café bom fique sem graça em poucas semanas."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Os inimigos do café aberto"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Ar: o oxigênio faz o café perder aroma e ficar sem gosto",
+            "Luz: principalmente a luz direta do sol na bancada",
+            "Calor: perto do fogão, da cafeteira ou de uma janela ensolarada",
+            "Umidade: pote aberto o tempo todo, ou guardado onde tem vapor"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Onde guardar"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Um lugar fresco, escuro e afastado do fogão: dentro de um armário costuma ser o melhor. Deixar o pote à mostra na bancada é bonito, mas expõe o café à luz e ao calor do ambiente."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Geladeira e freezer: por que evitar"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Muita gente guarda o café na geladeira achando que conserva mais. Na rotina, costuma dar errado: cada vez que o pote sai do frio e é aberto, a umidade do ar condensa no pó, e o café pode absorver cheiro de outros alimentos. Se você compra em grande quantidade, dividir em porções pequenas e congelar cada uma, abrindo só uma por vez, é a forma mais segura de usar o congelador."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Que tipo de pote usar"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O pote precisa fechar bem, ter tampa com vedação e caber a quantidade que você usa em poucas semanas. Pote de vidro transparente funciona, desde que fique dentro do armário, longe da luz. Se o café vem em pacote com válvula, dá pra manter no pacote bem fechado com um clipe, mas o pote costuma vedar melhor."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Quanto comprar de cada vez"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Vale comprar quantidades menores, com mais frequência, em vez de estocar meses. E se você tem moedor, moer na hora preserva mais aroma do que guardar o café já moído, porque o pó exposto ao ar perde sabor mais rápido que o grão."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Café em cápsula também perde qualidade guardado errado"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Cápsula fechada de fábrica dura mais que o café aberto, mas depois de aberta a caixa, guardar num lugar fresco e seco, longe do sol, ainda faz diferença. Cápsula não se beneficia de pote hermético como o grão ou o pó, porque já vem selada individualmente, mas a caixa externa protege da luz e deve ser mantida fechada."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Sinal de que o café já perdeu o ponto"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Cheiro fraco na hora de abrir o pote é o primeiro sinal. Outro é o pó não formar aquela borbulha (a \"crema\") quando a água quente toca ele, sinal de que o gás natural do café, que também carrega aroma, já escapou boa parte."
+        }
+      ],
+      "produtoDestaque": {
+        "nome": "Oikos Pote de Vidro 600ml com Tampa de Bambu Hermético",
+        "selo": "Mais de 3.900 avaliações",
+        "precoMin": 25,
+        "precoMax": 25,
+        "nota": 4.7,
+        "avaliacoes": 3952,
+        "pros": [
+          "Nota 4,7 com 3.952 avaliações, 85% delas de 5 estrelas",
+          "Tampa com anel de silicone pra vedar, segundo a descrição do produto",
+          "Vem em vários tamanhos, de 200 ml a 2 litros, o que ajuda a escolher o pote conforme o pacote de café"
+        ],
+        "contra": "É um pote multiuso, não feito só pra café, e o vidro transparente deixa passar luz, então precisa ficar dentro do armário. Um comprador achou o vidro fino, e vidro pode quebrar com queda.",
+        "paraQuem": "Pra quem guarda o café dentro do armário e quer um pote barato que feche bem. Confira o tamanho, porque o de 600 ml pode ser pequeno pra um pacote grande.",
+        "linkAmazon": "https://www.amazon.com.br/dp/B083M98XHB?tag=dicasinteli05-20"
+      },
+      "faq": [
+        {
+          "pergunta": "Pote de vidro transparente estraga o café?",
+          "resposta": "A luz é um dos fatores que acelera a perda de sabor, então o vidro transparente à mostra na bancada não é o ideal. Dentro de um armário escuro ele funciona bem, e o cuidado é o mesmo com qualquer pote transparente."
+        },
+        {
+          "pergunta": "Posso guardar o café no pacote original?",
+          "resposta": "Pode, se o pacote for bem fechado depois de cada uso, com um clipe ou dobrando com firmeza. Ele não veda tão bem quanto um pote hermético, então o café tende a perder aroma um pouco mais rápido."
+        },
+        {
+          "pergunta": "Café moído dura menos que café em grão?",
+          "resposta": "Costuma perder aroma mais rápido, porque o pó tem muito mais superfície exposta ao ar. Por isso quem tem moedor costuma preferir moer na hora, só o que vai usar."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/moedor-de-cafe/",
+        "label": "moedor de café"
+      }
     }
   ]
 }
