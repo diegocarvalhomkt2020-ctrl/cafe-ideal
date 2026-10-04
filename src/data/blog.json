@@ -452,6 +452,114 @@
         "href": "/moedor-de-cafe/",
         "label": "moedor de café"
       }
+    },
+    {
+      "slug": "como-limpar-garrafa-termica-de-cafe",
+      "titulo": "Como limpar garrafa térmica de café por dentro",
+      "resumo": "Como tirar o encardido e o cheiro de café de dentro da garrafa térmica com bicarbonato ou vinagre, e o que evitar pra não estragar o isolamento.",
+      "imagem": "/images/blog/como-limpar-garrafa-termica-de-cafe.png",
+      "dataPublicacao": "2026-10-04",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Café esquecido dentro da garrafa azeda e deixa cheiro e uma película escura nas paredes. Dá pra limpar com produtos que você já tem em casa, mas o cuidado é não danificar o isolamento."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Limpeza do dia a dia"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Esvazie logo depois de usar, sem deixar o café parado por horas",
+            "Lave com água morna, detergente e uma escova de cabo longo",
+            "Enxágue bem e deixe secar de boca pra baixo, com a tampa aberta"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Pra tirar o encardido"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Coloque 1 ou 2 colheres de sopa de bicarbonato e encha com água bem quente",
+            "Tampe e deixe agir por algumas horas",
+            "Esfregue com a escova, enxágue e seque"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Pra tirar o cheiro"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Uma parte de vinagre pra uma de água, deixada dentro por algumas horas, costuma resolver o cheiro. Enxágue várias vezes depois. Use o vinagre e o bicarbonato em momentos separados: juntos, um anula o outro."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Tampa, bico e borracha de vedação"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Boa parte do cheiro fica na tampa, no bico e na borracha de vedação, que muita gente esquece. Desmonte o que o fabricante permitir, lave com água morna e detergente e deixe secar inteiro antes de montar de novo. Guardar a garrafa com a tampa aberta evita o cheiro de fechado."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Quando a limpeza não resolve"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Se a garrafa deixou de manter o café quente por várias horas, o problema provavelmente é o isolamento, e não a sujeira. Em garrafas com ampola de vidro por dentro, uma queda pode quebrar a ampola sem marca por fora, e nesse caso limpar não adianta."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O que evitar"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Palha de aço e esponja áspera, que riscam o interior",
+            "Água sanitária, que pode danificar o inox e deixa cheiro forte",
+            "Bater a escova com força em garrafa com ampola de vidro por dentro",
+            "Lava-louças, se o fabricante não permitir: alguns modelos perdem o isolamento ou a pintura na máquina"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Cheiro de plástico ou metal na garrafa nova"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Garrafa nova costuma vir com um cheiro leve de fábrica, que passa depois de duas ou três lavagens completas com água quente e detergente, antes do primeiro uso com café. Se o cheiro continuar depois disso, deixar de molho com bicarbonato por algumas horas ajuda a acelerar."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Secagem completa evita mofo na tampa"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Tampa guardada fechada ainda um pouco úmida é um dos lugares mais comuns pra aparecer mofo em garrafa térmica, porque a borracha de vedação retém água nas dobras. Depois de lavar, deixe a tampa aberta e virada, exposta ao ar, até secar por completo antes de guardar."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Posso usar vinagre e bicarbonato juntos?",
+          "resposta": "Melhor um de cada vez. Juntos, um neutraliza o outro e o efeito de limpeza cai. Use o bicarbonato pro encardido e o vinagre diluído pro cheiro."
+        },
+        {
+          "pergunta": "Garrafa térmica pode ir na lava-louças?",
+          "resposta": "Depende do modelo. Alguns perdem o isolamento ou a pintura na máquina. Confira o manual do fabricante e, na dúvida, lave à mão."
+        },
+        {
+          "pergunta": "De quanto em quanto tempo limpar a fundo?",
+          "resposta": "Lave depois de cada uso, e faça a limpeza mais funda quando notar encardido ou cheiro. Café deixado dentro por muito tempo azeda e fica mais difícil de tirar."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/copo-termico/",
+        "label": "copo térmico"
+      }
     }
   ]
 }
