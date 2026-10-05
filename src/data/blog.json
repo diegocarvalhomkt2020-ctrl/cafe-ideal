@@ -219,7 +219,7 @@
         "selo": "Escolha da Amazon",
         "precoMin": 160,
         "precoMax": 160,
-        "nota": 5.0,
+        "nota": 5,
         "avaliacoes": 33,
         "pros": [
           "Nota máxima (5,0) com bom volume de avaliação (33), selo \"Escolha da Amazon\"",
@@ -559,6 +559,103 @@
       "pilarRelacionado": {
         "href": "/copo-termico/",
         "label": "copo térmico"
+      }
+    },
+    {
+      "slug": "cold-brew-na-prensa-francesa",
+      "titulo": "Como fazer cold brew na prensa francesa",
+      "resumo": "Cold brew em casa usando só a prensa francesa: medida, moagem, tempo na geladeira, como coar sem deixar o café turvo e quanto tempo dura.",
+      "imagem": "/images/blog/cold-brew-na-prensa-francesa.jpg",
+      "dataPublicacao": "2026-10-07",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Cold brew é o café extraído a frio, por muitas horas, e costuma sair mais suave e menos ácido que o café quente gelado. Quem tem prensa francesa já tem o que precisa pra fazer em casa."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Medida"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Uma referência é 1 parte de café pra 8 de água, em peso. Pra uma prensa de 600 ml, isso dá cerca de 60 g de café, mais ou menos 8 colheres de sopa, e 480 ml de água. O resultado é um concentrado, que depois você dilui com água, gelo ou leite."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Passo a passo"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Use café moído grosso, se puder. Pó fino deixa o cold brew turvo e mais amargo",
+            "Coloque o café na prensa e despeje a água fria ou em temperatura ambiente, molhando todo o pó",
+            "Mexa uma vez, tampe sem descer o êmbolo e leve à geladeira",
+            "Deixe de 12 a 16 horas",
+            "Desça o êmbolo devagar e sirva, diluindo a gosto"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Como servir"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Como o cold brew sai concentrado, comece diluindo em partes iguais, uma de concentrado pra uma de água, gelo ou leite, e ajuste ao seu gosto. Numa prensa de 350 ml, a mesma proporção dá cerca de 35 g de café pra 280 ml de água."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Erros que estragam"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Passar de umas 20 horas, quando o café tende a amargar",
+            "Usar pó muito fino sem reduzir o tempo",
+            "Deixar o café na prensa depois de coado, em vez de passar pra um pote fechado"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Como guardar"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Passe o cold brew pronto pra um pote de vidro bem fechado e guarde na geladeira. Costuma durar alguns dias, em geral até uns 5. Se o sabor cair ou o cheiro mudar, descarte."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Cold brew com leite (café com leite gelado)"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O concentrado de cold brew combina bem com leite, porque o sabor suave e pouco ácido não se perde no meio do leite como aconteceria com café comum. Misture uma parte de concentrado com uma de leite gelado, ajuste o adoçante e sirva com bastante gelo."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Dá pra fazer numa prensa maior de uma vez"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Se sua prensa for de 1 litro, a mesma proporção (1 parte de café pra 8 de água em peso) rende cerca de 100 g de café pra 800 ml de água, suficiente pra render vários dias de concentrado, já que ele dura guardado na geladeira."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Cold brew e café gelado são a mesma coisa?",
+          "resposta": "Não. O café gelado é feito quente e depois resfriado. O cold brew é extraído a frio, por muitas horas, e costuma sair menos ácido."
+        },
+        {
+          "pergunta": "Posso usar o pó de café do mercado?",
+          "resposta": "Pode, mas o pó fino deixa o cold brew turvo e mais amargo. Se não tiver moagem grossa, reduza o tempo pra 10 ou 12 horas e coe depois com filtro de papel."
+        },
+        {
+          "pergunta": "Quanto tempo dura o cold brew?",
+          "resposta": "Fechado e na geladeira, costuma durar alguns dias, em geral até uns 5. Passou disso, o sabor cai e é melhor descartar."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/prensa-francesa/",
+        "label": "prensa francesa"
       }
     }
   ]
