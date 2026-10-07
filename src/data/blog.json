@@ -657,6 +657,89 @@
         "href": "/prensa-francesa/",
         "label": "prensa francesa"
       }
+    },
+    {
+      "slug": "temperatura-ideal-da-agua-para-cafe",
+      "titulo": "Qual a temperatura ideal da água pro café",
+      "resumo": "Por que água fervendo queima o café e água fria demais não extrai o sabor, e como acertar a temperatura sem precisar de termômetro.",
+      "imagem": "/images/blog/temperatura-ideal-da-agua-para-cafe.jpg",
+      "dataPublicacao": "2026-10-10",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "A faixa mais indicada pra extrair café é entre 90°C e 96°C. Abaixo disso, a água não extrai os óleos e compostos direito, e o café sai fraco e ácido demais. Acima disso, a água queima o pó, e o café sai amargo, com gosto de queimado que não sai por mais que você ajuste a moagem."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Água fervendo é o erro mais comum"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Água a 100°C, direto da fervura, está acima da faixa ideal. É o erro mais comum de quem não tem chaleira com controle de temperatura: tira do fogo já fervendo e despeja na hora sobre o pó."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Como acertar sem termômetro"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Deixe a água ferver e desligue o fogo",
+            "Espere de 30 segundos a 1 minuto antes de despejar sobre o pó",
+            "Em dia mais frio, ou com muita água na chaleira, o tempo de espera pode precisar ser um pouco maior"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Chaleira com controle de temperatura resolve de vez"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Uma chaleira elétrica com ajuste de temperatura tira o palpite da equação: você define 92°C ou 94°C e ela avisa quando chegar lá, sem precisar cronometrar nem arriscar. É útil sobretudo pra quem faz café todos os dias e quer o mesmo resultado sempre."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "A moagem também interfere no resultado"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Mesmo com a temperatura certa, café moído muito fino com água muito quente extrai rápido demais e amarga. Se o café estiver amargo mesmo com a temperatura correta, o próximo ajuste é experimentar uma moagem um pouco mais grossa antes de mexer na água de novo."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Altitude muda o ponto de fervura"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Em cidades mais altas, a água ferve numa temperatura um pouco menor que 100°C, o que muda ligeiramente a espera ideal antes de despejar sobre o pó. Não é uma diferença drástica no dia a dia, mas explica por que a mesma receita pode sair um pouco diferente dependendo de onde você está."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Copo ou jarra pré-aquecida ajuda a manter a temperatura"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Despejar água quente num recipiente frio rouba alguns graus da água antes mesmo dela tocar o café. Passar água quente rapidamente no coador, na prensa ou na xícara antes de preparar, e descartar essa água, ajuda a manter a temperatura mais próxima do ideal durante toda a extração."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Água morna serve pro café?",
+          "resposta": "Não. Água morna, bem abaixo de 90°C, não extrai o café direito, e a bebida sai fraca e aguada, mesmo usando bastante pó. A faixa de 90°C a 96°C é a que realmente extrai o sabor do café."
+        },
+        {
+          "pergunta": "Preciso de termômetro pra fazer café bom?",
+          "resposta": "Não é obrigatório. O método de ferver e esperar de 30 segundos a 1 minuto antes de despejar já aproxima bem a faixa ideal, sem precisar de equipamento extra."
+        },
+        {
+          "pergunta": "A temperatura da água muda com o tipo de preparo (coado, prensa francesa, expresso)?",
+          "resposta": "A faixa ideal (90°C a 96°C) vale pra coado e prensa francesa. Máquina de café expresso já regula a temperatura internamente, então isso não é algo que você ajusta na hora."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/chaleira-eletrica/",
+        "label": "chaleira elétrica"
+      }
     }
   ]
 }
