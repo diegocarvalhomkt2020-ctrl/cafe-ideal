@@ -9,7 +9,7 @@
         {
           "id": "CI-BALANCA-01",
           "nome": "Biscuitt Balança Digital Barista Collection, até 3kg",
-          "imagem": "/images/produtos/biscuitt-balanca-cafe-3kg.png",
+          "imagem": "/images/produtos/biscuitt-balanca-cafe-3kg.jpg",
           "selo": "Mais barata",
           "precoMin": 90,
           "precoMax": 155,
@@ -27,7 +27,7 @@
         {
           "id": "CI-BALANCA-02",
           "nome": "Ultrean Balança de Precisão para Café, com temporizador",
-          "imagem": "/images/produtos/ultrean-balanca-cafe-temporizador.png",
+          "imagem": "/images/produtos/ultrean-balanca-cafe-temporizador.jpg",
           "selo": "Mais avaliada",
           "precoMin": 123,
           "precoMax": 129,
@@ -45,7 +45,7 @@
         {
           "id": "CI-BALANCA-03",
           "nome": "CADINA Balança de Café Barista com Temporizador",
-          "imagem": "/images/produtos/cadina-balanca-cafe-barista.png",
+          "imagem": "/images/produtos/cadina-balanca-cafe-barista.jpg",
           "selo": "Nota mais alta",
           "precoMin": 137,
           "precoMax": 160,
@@ -63,7 +63,7 @@
         {
           "id": "CI-BALANCA-04",
           "nome": "HARIO Balança e Cronômetro Digital",
-          "imagem": "/images/produtos/hario-balanca-cronometro.png",
+          "imagem": "/images/produtos/hario-balanca-cronometro.jpg",
           "selo": "Marca de referência",
           "precoMin": 371,
           "precoMax": 469,
