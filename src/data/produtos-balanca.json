@@ -1,0 +1,84 @@
+{
+  "_nota": "RASCUNHO (pesquisado em 22/09/2026, ainda sem foto). 1 categoria com 4 produtos reais da Amazon, link de afiliado. Preços e notas precisam ser reconferidos no dia de publicar. Ver pesquisa-balanca.md.",
+  "categorias": [
+    {
+      "id": "balanca-de-cafe",
+      "nome": "Balança de café",
+      "descricao": "Medir o café no olho é o motivo mais comum de um café sair forte demais ou fraco demais. Uma balança de café mede em gramas e, na maioria dos modelos, também cronometra a extração, então acerta a proporção de café e água toda vez.",
+      "produtos": [
+        {
+          "id": "CI-BALANCA-01",
+          "nome": "Biscuitt Balança Digital Barista Collection, até 3kg",
+          "imagem": "/images/produtos/biscuitt-balanca-cafe-3kg.png",
+          "selo": "Mais barata",
+          "precoMin": 90,
+          "precoMax": 155,
+          "nota": 4.8,
+          "avaliacoes": 150,
+          "pros": [
+            "Capacidade de até 3 kg, precisão de 0,1 g",
+            "Mede em gramas, onças, libras e mililitros",
+            "Revestimento emborrachado, acompanha as pilhas"
+          ],
+          "contra": "Não tem temporizador embutido, diferente das outras 3 desta lista, então não ajuda a cronometrar a extração, só pesa.",
+          "paraQuem": "Pra quem só quer pesar o café e a água com precisão, sem cronômetro",
+          "linkAmazon": "https://www.amazon.com.br/dp/B0CM9VJVLP?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CI-BALANCA-02",
+          "nome": "Ultrean Balança de Precisão para Café, com temporizador",
+          "imagem": "/images/produtos/ultrean-balanca-cafe-temporizador.png",
+          "selo": "Mais avaliada",
+          "precoMin": 123,
+          "precoMax": 129,
+          "nota": 4.6,
+          "avaliacoes": 21082,
+          "pros": [
+            "De longe a mais avaliada da lista, mais de 21 mil avaliações",
+            "6 unidades de medida e 2 modos de temporizador (manual e automático)",
+            "Bateria recarregável por USB-C, cerca de 200 usos por carga segundo o fabricante"
+          ],
+          "contra": "Uma avaliação relata que, depois de alguns meses de uso, a bateria dura menos e a leitura varia alguns miligramas ao pesar a mesma coisa duas vezes.",
+          "paraQuem": "Pra quem quer o modelo mais testado e não se importa de recarregar de vez em quando",
+          "linkAmazon": "https://www.amazon.com.br/dp/B0F1TDPJSG?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CI-BALANCA-03",
+          "nome": "CADINA Balança de Café Barista com Temporizador",
+          "imagem": "/images/produtos/cadina-balanca-cafe-barista.png",
+          "selo": "Nota mais alta",
+          "precoMin": 137,
+          "precoMax": 160,
+          "nota": 5.0,
+          "avaliacoes": 36,
+          "pros": [
+            "Nota máxima entre as 4, sensor de pressão liga a balança sozinha ao pôr o objeto em cima",
+            "Temporizador manual e automático, precisão de 0,1 g",
+            "Compacta: 14 x 12 x 2 cm, 317 g"
+          ],
+          "contra": "Capacidade máxima menor que as outras (até 2.000 g, contra 3.000 g da Biscuitt e da Ultrean) e só 36 avaliações, pouco histórico pra confirmar durabilidade.",
+          "paraQuem": "Pra quem prepara pouco café de cada vez e quer o modelo mais compacto",
+          "linkAmazon": "https://www.amazon.com.br/dp/B0FYCKC7V3?tag=dicasinteli05-20"
+        },
+        {
+          "id": "CI-BALANCA-04",
+          "nome": "HARIO Balança e Cronômetro Digital",
+          "imagem": "/images/produtos/hario-balanca-cronometro.png",
+          "selo": "Marca de referência",
+          "precoMin": 371,
+          "precoMax": 469,
+          "nota": 4.5,
+          "avaliacoes": 2977,
+          "pros": [
+            "Marca japonesa de referência em café especial, bem conhecida por quem já usa V60 ou Chemex",
+            "Pesa e cronometra ao mesmo tempo, com função tara e desligamento automático em 5 min",
+            "Precisão varia por faixa de peso (0,1 g até 200 g, 1 g acima de 500 g)"
+          ],
+          "contra": "É a mais cara da lista, mais de 3 vezes o preço da Biscuitt. Avaliações reais relatam durar menos que o esperado e pelo menos um comprador recebeu o produto com defeito.",
+          "paraQuem": "Pra quem já investiu em outros equipamentos de café especial e quer a mesma marca",
+          "linkAmazon": "https://www.amazon.com.br/dp/B009GPJMOU?tag=dicasinteli05-20"
+        }
+      ]
+    }
+  ]
+}

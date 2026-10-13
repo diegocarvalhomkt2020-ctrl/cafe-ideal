@@ -1,0 +1,229 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProdutoCard from '../../components/ProdutoCard.astro';
+import dados from '../../data/produtos-balanca.json';
+
+const categoria = dados.categorias.find((c) => c.id === 'balanca-de-cafe');
+const produtos = categoria.produtos;
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://cafe.dicasinteligentes.com/" },
+    { "@type": "ListItem", position: 2, name: "Balança de café", item: "https://cafe.dicasinteligentes.com/balanca-de-cafe/" },
+  ],
+};
+
+const faq = [
+  {
+    pergunta: "Balança de café precisa ter temporizador?",
+    resposta: "Não precisa, mas ajuda bastante. O temporizador cronometra a extração junto com o peso, então você repete o mesmo tempo e a mesma proporção toda vez. Sem ele, dá pra usar um cronômetro separado ou o do celular, só é menos prático.",
+  },
+  {
+    pergunta: "Qual a precisão ideal pra pesar café?",
+    resposta: "0,1 g é o padrão das balanças de café, inclusive nas 4 desta lista. Isso é preciso o bastante pra qualquer método (coado, prensa francesa, espresso). Balança de cozinha comum costuma pesar só de 1 em 1 grama, o que já muda o sabor.",
+  },
+  {
+    pergunta: "Vale a pena pagar mais caro numa balança de café?",
+    resposta: "Só se você já usa outros equipamentos de café especial e quer bateria mais duradoura, construção mais robusta ou uma marca específica. Pra pesar café e água certo, mesmo a mais barata da lista já cumpre a função.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((item) => ({
+    "@type": "Question",
+    name: item.pergunta,
+    acceptedAnswer: { "@type": "Answer", text: item.resposta },
+  })),
+};
+---
+<Layout
+  title="Balança de café: qual escolher"
+  description="Balanças de café pesquisadas na Amazon, com preço, nota e o defeito real de cada uma, pra pesar café e água na proporção certa sem chute."
+  image="/images/produtos/ultrean-balanca-cafe-temporizador.png"
+>
+  <p><a href="/">← Início</a></p>
+  <h1>Balança de café: qual escolher</h1>
+  <p class="atualizado">Todos os produtos abaixo foram pesquisados na Amazon, com preço, nota e avaliações reais.</p>
+
+  <p>
+    Medir o café no olho é o motivo mais comum de um café sair forte
+    demais ou fraco demais. Uma balança mede em gramas e, na maioria dos
+    modelos, também cronometra a extração, então acerta a proporção de
+    café e água toda vez.
+  </p>
+
+  <section class="como-escolhemos">
+    <h2>Como escolhemos</h2>
+    <p>
+      Nenhum produto entra nessa lista sem um defeito real declarado (bloco
+      "Vale saber" em cada card), pesquisado na ficha técnica e nas
+      características reais do produto. Preço sempre em faixa, nunca fixo.
+    </p>
+  </section>
+
+  <section class="comparativo">
+    <h2>Comparativo rápido</h2>
+    <div class="tabela-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Selo</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {produtos.map((produto) => (
+            <tr>
+              <td data-label="Produto">{produto.nome}</td>
+              <td data-label="Preço">{produto.precoMin === produto.precoMax ? `R$ ${produto.precoMin}` : `R$ ${produto.precoMin} a R$ ${produto.precoMax}`}</td>
+              <td data-label="Selo">{produto.selo || "—"}</td>
+              <td data-label="">
+                <a class="botao-tabela" href={produto.linkAmazon} rel="sponsored nofollow">Ver preço</a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="honestidade">
+    <h2>Onde vale gastar mais, onde não faz diferença</h2>
+    <p>
+      A Ultrean (~R$123-129) é de longe a mais avaliada da lista, mais de
+      21 mil avaliações, e já traz temporizador. A Biscuitt (~R$90-155) é
+      a mais barata, mas não tem temporizador, só pesa. A CADINA
+      (~R$137-160) tem a nota mais alta, porém com só 36 avaliações e
+      capacidade menor (2 kg contra 3 kg das outras duas). A HARIO
+      (~R$371-469) só compensa a diferença de mais de 3x no preço se
+      marca de referência em café especial for prioridade real.
+    </p>
+  </section>
+
+  <section id={categoria.id} class="categoria">
+    <h2>{categoria.nome}</h2>
+    <p>{categoria.descricao}</p>
+    {produtos.map((produto) => <ProdutoCard produto={produto} />)}
+  </section>
+
+  <p class="cluster-link">
+    Veja também:
+    <a href="/balanca-de-cafe/erros-comuns/">os erros mais comuns usando balança de café →</a>
+    ·
+    <a href="/balanca-de-cafe/por-orcamento/">as mesmas balanças por orçamento →</a>
+    ·
+    <a href="/balanca-de-cafe/comparativo-top3/">comparativo Top 3 lado a lado →</a>
+    ·
+    <a href="/prensa-francesa/">prensa francesa: qual escolher →</a>
+    ·
+    <a href="/moedor-de-cafe/">moedor de café: qual escolher →</a>
+    ·
+    <a href="/blog/por-que-pesar-o-cafe-muda-o-sabor/">por que pesar o café muda o sabor →</a>
+  </p>
+
+  <section class="faq">
+    <h2>Perguntas frequentes</h2>
+    {faq.map((item) => (
+      <div class="faq-item">
+        <h3>{item.pergunta}</h3>
+        <p>{item.resposta}</p>
+      </div>
+    ))}
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <style>
+    .atualizado { color: var(--cor-texto-suave); font-size: 0.9rem; }
+    .cluster-link { font-weight: 600; margin: 2.5rem 0 0; line-height: 2; }
+    .como-escolhemos {
+      background: var(--cor-superficie);
+      border: 1px solid var(--cor-borda);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .como-escolhemos h2 { font-size: 1rem; margin: 0 0 0.4rem; }
+    .como-escolhemos p { margin: 0; font-size: 0.9rem; color: var(--cor-texto-suave); }
+    .comparativo { margin: 1.5rem 0 2.5rem; }
+    .tabela-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 0.85rem; }
+    th, td {
+      text-align: left;
+      padding: 0.6rem 0.5rem;
+      border-bottom: 1px solid var(--cor-borda);
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+    th { color: var(--cor-texto-suave); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; }
+    th:nth-child(1), td:nth-child(1) { width: 40%; }
+    th:nth-child(2), td:nth-child(2) { width: 22%; }
+    th:nth-child(3), td:nth-child(3) { width: 20%; }
+    th:nth-child(4), td:nth-child(4) { width: 18%; }
+    .botao-tabela {
+      display: inline-block;
+      background: var(--cor-acento);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.3rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      white-space: nowrap;
+    }
+    .categoria { margin-bottom: 2.5rem; padding-top: 0.5rem; }
+    .honestidade {
+      margin: 2.5rem 0;
+      padding: 1.5rem 1.75rem;
+      background: var(--cor-superficie);
+      border: 1px solid var(--cor-borda);
+      border-left: 4px solid var(--cor-vale-saber);
+      border-radius: 10px;
+    }
+    .honestidade h2 { margin: 0 0 0.75rem; font-size: 1.15rem; }
+    .honestidade p { margin: 0; color: var(--cor-texto-suave); }
+    .faq {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cor-borda);
+    }
+    .faq-item { margin-bottom: 1.25rem; }
+    .faq-item h3 { font-size: 1rem; margin: 0 0 0.35rem; }
+    .faq-item p { margin: 0; color: var(--cor-texto-suave); }
+
+    @media (max-width: 640px) {
+      table, thead, tbody, th, td, tr { display: block; }
+      thead { position: absolute; left: -9999px; }
+      tr {
+        border: 1px solid var(--cor-borda);
+        border-radius: 10px;
+        padding: 0.75rem 0.9rem;
+        margin-bottom: 0.75rem;
+        background: var(--cor-superficie);
+      }
+      td {
+        border: none;
+        padding: 0.35rem 0;
+        white-space: normal;
+        width: auto !important;
+      }
+      td[data-label="Preço"] { white-space: nowrap; }
+      td[data-label]:not([data-label=""])::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: var(--cor-texto-suave);
+        margin-bottom: 0.1rem;
+      }
+      td:last-child { padding-top: 0.6rem; }
+    }
+  </style>
+</Layout>
