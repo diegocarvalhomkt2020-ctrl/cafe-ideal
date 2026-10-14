@@ -740,6 +740,93 @@
         "href": "/chaleira-eletrica/",
         "label": "chaleira elétrica"
       }
+    },
+    {
+      "slug": "filtro-de-papel-ou-pano-qual-escolher",
+      "titulo": "Filtro de papel ou de pano: qual escolher pro café",
+      "resumo": "A diferença real no sabor e na limpeza entre filtro de papel e de pano, e qual faz mais sentido pro seu dia a dia.",
+      "imagem": "/images/blog/filtro-de-papel-ou-pano-qual-escolher.jpg",
+      "dataPublicacao": "2026-10-14",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "A escolha entre papel e pano não é sobre qual é \"melhor\" de forma absoluta, é sobre o que cada um retém e o trabalho que cada um dá no dia a dia. Os dois fazem café bom, o resultado só é diferente."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Filtro de papel"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Retém mais óleo do café, resultando numa bebida mais limpa e menos encorpada",
+            "Descartável: zero trabalho de limpeza, mas gasto recorrente e mais lixo",
+            "Prático pra quem não quer lavar nada extra todos os dias"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Filtro de pano"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Deixa passar mais óleo, o café sai mais encorpado e algumas pessoas dizem que mais saboroso",
+            "Reutilizável: sem gasto recorrente, mais econômico e gera menos lixo no longo prazo",
+            "Precisa ser lavado logo após o uso e guardado sempre úmido (nunca seco), senão pega cheiro e gruda pó velho"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O trabalho de manutenção é o que mais pesa na decisão"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Filtro de pano que não é lavado direito logo depois do uso acumula gordura e passa a deixar o café com gosto rançoso, o que é pior do que qualquer diferença sutil de sabor. Se sua rotina não permite lavar o filtro na hora, o papel evita esse risco."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Dá pra usar os dois, dependendo do momento"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Muita gente usa pano no dia a dia, quando tem tempo de lavar na hora, e guarda um pacote de papel pra dia corrido ou visita, quando não quer se preocupar com a limpeza depois. Não precisa escolher só um pra sempre."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Impacto ambiental, se isso pesar na decisão"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O de papel descartável gera lixo a cada uso, mesmo sendo biodegradável, enquanto o de pano, usado por meses ou anos, gera bem menos resíduo no total. Não é o critério principal pra maioria das pessoas, mas costuma entrar na balança de quem já pensa nisso."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Filtro de metal (permanente) é uma terceira opção"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Existe também o filtro de metal, tipo tela fina, que não retém quase nada de óleo e deixa passar até um pouco de borra fina pro fundo da xícara. É reutilizável como o de pano, mas sem o trabalho de lavar e guardar úmido, e o resultado fica ainda mais encorpado que o de pano."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Filtro de pano precisa de cuidado especial antes do primeiro uso?",
+          "resposta": "Sim, o ideal é ferver o filtro novo em água por alguns minutos antes de usar pela primeira vez, pra tirar o cheiro e o gosto de tecido novo que ele pode passar pro café."
+        },
+        {
+          "pergunta": "Filtro de papel pode ser reaproveitado?",
+          "resposta": "Não é recomendado. Ele já está saturado de óleo e resíduo depois de um uso, e reutilizar prejudica o sabor do próximo café e pode deixar a coar mais devagar."
+        },
+        {
+          "pergunta": "Qual dos dois é mais barato no longo prazo?",
+          "resposta": "O de pano, porque é reutilizável por meses com o cuidado certo, enquanto o de papel é um gasto recorrente a cada coada. A diferença fica mais clara pra quem faz café todos os dias."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/cafeteira/",
+        "label": "cafeteira elétrica"
+      }
     }
   ]
 }
