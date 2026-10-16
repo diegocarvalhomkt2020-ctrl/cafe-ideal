@@ -827,6 +827,90 @@
         "href": "/cafeteira/",
         "label": "cafeteira elétrica"
       }
+    },
+    {
+      "slug": "como-fazer-cafe-gelado-em-casa",
+      "titulo": "Como fazer café gelado em casa (sem ficar aguado)",
+      "resumo": "O erro que deixa o café gelado fraco e aguado, e como preparar em minutos sem precisar do processo mais longo do cold brew.",
+      "dataPublicacao": "2026-10-17",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Café gelado é diferente de cold brew: o gelado é café quente comum, esfriado rápido com gelo, pronto em minutos. O cold brew é extraído a frio por várias horas. Os dois são bons, mas resolvem momentos diferentes: gelado é pra quando você quer o café já, cold brew é pra quem planeja com antecedência."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "O erro que deixa o café fraco e aguado"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Fazer o café na proporção normal e depois jogar gelo em cima dilui a bebida na hora que o gelo derrete, deixando o café fraco rapidamente. A solução é fazer o café mais concentrado do que o normal, sabendo que o gelo vai diluir na medida certa."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Passo a passo"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Prepare o café coado ou na prensa francesa com quase o dobro da quantidade de pó que você usaria normalmente",
+            "Encha um copo com bastante gelo",
+            "Despeje o café quente concentrado direto sobre o gelo",
+            "O choque de temperatura esfria rápido, e o gelo que derrete completa a diluição até o ponto certo"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Não deixe o café esfriar antes de gelar"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Café que esfria devagar em temperatura ambiente antes de ir pro gelo tende a ficar com gosto mais amargo e opaco. O ideal é despejar ainda quente direto sobre o gelo, pra esfriar rápido e preservar o sabor mais fresco."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Cubos de café evitam diluir demais"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Uma alternativa pra quem bebe café gelado com frequência é congelar café já pronto em forma de gelo e usar esses cubos no lugar do gelo comum. Assim, quando derretem, não diluem a bebida, só mantêm ela gelada por mais tempo."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Café gelado com leite ou chantilly"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "A mesma base concentrada usada pro café gelado simples serve pra fazer uma versão com leite: despeje o café concentrado ainda quente sobre o gelo, deixe esfriar um pouco e complete com leite gelado por cima. Chantilly ou uma calda entram no final, depois que a bebida já está fria, pra não derreter rápido."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Copo gelado na geladeira antes de usar"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Deixar o copo alguns minutos na geladeira ou no freezer antes de montar a bebida ajuda o café gelado a durar mais tempo fresco, porque o próprio copo não esquenta a bebida por dentro logo nos primeiros minutos."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Posso usar café solúvel pra fazer café gelado?",
+          "resposta": "Sim, funciona, mas o mesmo princípio vale: use mais pó do que o normal na hora de dissolver, porque o gelo vai diluir a bebida ao derreter."
+        },
+        {
+          "pergunta": "Qual a diferença de sabor entre café gelado e cold brew?",
+          "resposta": "O café gelado, feito com café quente esfriado rápido, mantém a acidez natural do café. O cold brew, extraído a frio por horas, sai naturalmente mais suave e menos ácido, mas leva bem mais tempo pra ficar pronto."
+        },
+        {
+          "pergunta": "Dá pra adoçar o café gelado do mesmo jeito que o quente?",
+          "resposta": "Açúcar comum dissolve mal em líquido frio. Se for adoçar, faça isso enquanto o café ainda está quente, antes de despejar sobre o gelo, ou use um xarope simples já dissolvido."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/prensa-francesa/",
+        "label": "prensa francesa"
+      },
+      "imagem": "/images/blog/como-fazer-cafe-gelado-em-casa.jpg"
     }
   ]
 }
