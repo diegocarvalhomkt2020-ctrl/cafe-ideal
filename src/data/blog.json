@@ -911,6 +911,89 @@
         "label": "prensa francesa"
       },
       "imagem": "/images/blog/como-fazer-cafe-gelado-em-casa.jpg"
+    },
+    {
+      "slug": "como-fazer-cappuccino-em-casa-sem-maquina",
+      "titulo": "Como fazer cappuccino em casa sem máquina de expresso",
+      "resumo": "Como bater espuma de leite sem máquina cara e montar um cappuccino em casa com o café que você já faz todo dia.",
+      "imagem": "/images/blog/como-fazer-cappuccino-em-casa-sem-maquina.jpg",
+      "dataPublicacao": "2026-10-20",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Cappuccino de verdade leva café expresso, mas dá pra montar uma versão caseira boa com o café coado ou de prensa francesa que você já faz, desde que ele saia bem concentrado. A parte que costuma travar as pessoas é a espuma de leite, e essa não precisa de máquina de expresso pra sair bem."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Como bater a espuma sem máquina de expresso"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Espumador elétrico de mão: mergulhe no leite morno (não fervendo) e bata por 20 a 30 segundos até dobrar de volume",
+            "Espumador manual (com êmbolo, tipo prensa francesa pequena): bombeie o leite morno várias vezes até formar espuma firme",
+            "Sem espumador: leite quente num pote fechado, sacuda bem forte por 30 segundos, e a espuma se forma com o ar que entra"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "A temperatura do leite importa mais que o equipamento"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Leite fervendo perde a proteína que ajuda a segurar a espuma, e o resultado fica mais líquido e murcha rápido. O ideal é aquecer até ficar quente ao toque, mas não borbulhando, mais ou menos 60°C a 65°C."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Montando o cappuccino"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "A proporção clássica é um terço de café concentrado, um terço de leite quente e um terço de espuma por cima. Despeje o café primeiro, depois o leite, e finalize colocando a espuma por cima com uma colher, segurando a parte mais líquida que ainda sobrar no fundo do recipiente."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Café concentrado faz diferença no resultado"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Café fraco se perde no meio do leite e da espuma. Prepare com mais pó que o normal, do mesmo jeito que se faz café gelado concentrado, pra o sabor do café continuar presente mesmo misturado com o leite."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Cacau ou canela por cima é opcional, não disfarce"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Uma pitada de cacau em pó ou canela por cima da espuma é só decoração e sabor extra, não corrige espuma fraca nem café aguado. Se a espuma não ficou boa, vale mais ajustar a temperatura do leite ou o tempo de batida do que tentar disfarçar com pó por cima."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Guarde o café concentrado pra mais de uma xícara"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Se você prepara café concentrado numa quantidade maior, o que sobrar pode ir pra geladeira e ser reaquecido rapidamente na hora de montar outro cappuccino, sem precisar coar tudo de novo do zero a cada xícara."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Posso usar leite desnatado pra fazer espuma?",
+          "resposta": "Dá, mas o leite integral costuma formar espuma mais firme e cremosa, porque a gordura ajuda a estabilizar as bolhas. Com desnatado, a espuma tende a murchar mais rápido."
+        },
+        {
+          "pergunta": "Cappuccino caseiro sem máquina fica igual ao de cafeteria?",
+          "resposta": "Fica parecido, mas não idêntico: a máquina de expresso injeta vapor sob pressão, que dá uma espuma mais microfina e estável. A versão caseira ainda assim rende um cappuccino bem gostoso, só com textura um pouco diferente."
+        },
+        {
+          "pergunta": "Quanto tempo a espuma dura depois de pronta?",
+          "resposta": "Pouco tempo, entre 1 e 2 minutos antes de começar a murchar. Por isso o ideal é bater a espuma por último e montar a bebida na sequência, sem deixar esperando."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/espumador-leite/",
+        "label": "espumador de leite"
+      }
     }
   ]
 }
