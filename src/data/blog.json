@@ -994,6 +994,89 @@
         "href": "/espumador-leite/",
         "label": "espumador de leite"
       }
+    },
+    {
+      "slug": "leite-vegetal-espuma-como-fazer",
+      "titulo": "Como fazer espuma com leite vegetal (aveia, amêndoa, soja)",
+      "resumo": "Por que leite vegetal se comporta diferente do leite de vaca na espuma, qual tipo espuma melhor e o ajuste que evita a espuma murchar rápido.",
+      "imagem": "/images/blog/leite-vegetal-espuma-como-fazer.jpg",
+      "dataPublicacao": "2026-10-23",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Leite vegetal não tem a mesma proteína e gordura do leite de vaca, então ele reage diferente ao ser batido. Alguns tipos espumam bem, outros murcham rápido ou nem formam espuma firme, e a diferença está muito ligada à marca, não só ao tipo de grão."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Qual tipo costuma espumar melhor"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Aveia: geralmente o que mais se aproxima da cremosidade do leite de vaca, boa escolha pra quem está começando",
+            "Soja: também espuma bem, mas o sabor mais forte pode se destacar demais num café mais suave",
+            "Amêndoa e outras castanhas: costumam espumar menos e murchar mais rápido, por terem menos proteína"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Procure a versão \"barista\" quando existir"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Várias marcas vendem uma versão do leite vegetal formulada especificamente pra espumar melhor, chamada de \"barista\" ou \"para café\" no rótulo. Ela tem mais gordura e estabilizante do que a versão comum, e costuma resolver boa parte do problema de espuma fraca."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Temperatura ainda importa"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O mesmo cuidado do leite de vaca vale aqui: aqueça até ficar quente ao toque, sem ferver, antes de bater. Leite vegetal fervido tende a talhar ou perder ainda mais a capacidade de formar espuma firme."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Se a espuma murchar rápido"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Bata por mais tempo (30 a 40 segundos em vez de 20) e sirva imediatamente depois de pronta. Se ainda assim não firmar, o problema costuma ser a marca específica do leite, e vale trocar por outra que tenha mais gordura na composição."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Marca faz mais diferença que o tipo de grão"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Duas marcas de leite de aveia podem se comportar bem diferente na espuma, porque a proporção de gordura e estabilizante varia de fabricante pra fabricante, mesmo dentro do mesmo tipo de grão. Se uma marca não espumar bem, vale testar outra antes de descartar aquele tipo de leite vegetal."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Validade mais próxima também interfere"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Leite vegetal perto da data de validade tende a espumar pior, porque a estrutura da proteína já começou a se alterar mesmo sem o leite estar estragado. Se notar espuma cada vez mais fraca com a mesma marca de sempre, confira a validade antes de trocar de marca."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Leite de coco espuma bem?",
+          "resposta": "Costuma espumar de forma irregular, porque a gordura do coco se separa mais facilmente. Não é a primeira opção pra quem quer espuma consistente, mas funciona bem como sabor no café mesmo sem espuma firme."
+        },
+        {
+          "pergunta": "Preciso de um espumador diferente pra leite vegetal?",
+          "resposta": "Não, o mesmo espumador usado pra leite de vaca funciona. A diferença está mais no tipo de leite e na temperatura do que no equipamento."
+        },
+        {
+          "pergunta": "Leite vegetal barista é mais caro que o comum?",
+          "resposta": "Geralmente sim, um pouco mais caro que a versão comum da mesma marca, porque tem uma formulação específica. Vale testar se o resultado da espuma compensa o preço extra pro seu uso."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/espumador-leite/",
+        "label": "espumador de leite"
+      }
     }
   ]
 }
