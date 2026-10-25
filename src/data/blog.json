@@ -1069,6 +1069,89 @@
         "href": "/espumador-leite/",
         "label": "espumador de leite"
       }
+    },
+    {
+      "slug": "quanto-tempo-dura-o-cafe-moido-aberto",
+      "titulo": "Quanto tempo dura o café moído depois de aberto",
+      "resumo": "Por que o café moído perde sabor muito mais rápido que o grão inteiro, quanto tempo ele ainda vale a pena e como guardar certo.",
+      "imagem": "/images/blog/quanto-tempo-dura-o-cafe-moido-aberto.jpg",
+      "dataPublicacao": "2026-10-26",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "Café moído perde qualidade muito mais rápido que café em grão, porque a moagem aumenta a área de contato com o ar, e é o oxigênio que rouba o aroma. Um café moído aberto começa a perder sabor perceptível já na primeira semana, mesmo guardado do jeito certo."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Quanto tempo ainda vale a pena"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Primeira semana: pico de sabor e aroma, o melhor momento pra consumir",
+            "Até 1 mês: ainda bom, mas com aroma perceptivelmente mais fraco",
+            "Depois de 1 mês: o café não estraga a ponto de fazer mal, mas o sabor cai bastante, ficando mais neutro e sem graça"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Como guardar pra durar mais"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Pote hermético, longe de luz, calor e umidade, é o básico que já ajuda bastante. Evite guardar perto do fogão (o calor acelera a perda de aroma) e nunca deixe o pacote aberto sem fechar direito entre um uso e outro."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Geladeira ou freezer não é boa ideia pro uso diário"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Café absorve cheiro de outros alimentos na geladeira, e a variação de temperatura toda vez que você abre o pote gera condensação, que estraga o café mais rápido, não mais devagar. Freezer só funciona bem pra guardar uma quantidade grande por muito tempo, tirando só o que vai usar e sem descongelar e recongelar o resto."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Comprar menos, com mais frequência, rende mais sabor"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Se você bebe café todos os dias, comprar um pacote grande pra durar meses significa consumir a maior parte dele já sem o sabor de pico. Pacotes menores, comprados com mais frequência, mantêm o café mais próximo do ponto ideal na maior parte do tempo."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Café descafeinado segue a mesma regra"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "O processo de retirar a cafeína não muda a forma como o café perde aroma depois de moído. As mesmas janelas de tempo (melhor na primeira semana, ainda bom até 1 mês) valem igual pro descafeinado, então o cuidado de guardar bem fechado é o mesmo."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Compare o cheiro do pacote fechado com o aberto"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "Um jeito simples de perceber a perda de aroma é guardar um pacote novo lacrado e comparar o cheiro dele, na hora de abrir, com o do pacote que já está aberto há duas ou três semanas. A diferença costuma ser bem perceptível, mesmo que o café aberto ainda pareça bom ao olhar."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "Café moído vencido faz mal?",
+          "resposta": "Café moído não costuma estragar a ponto de fazer mal, ele só perde sabor e aroma com o tempo. O problema é de qualidade da bebida, não de segurança, desde que guardado seco e sem mofo."
+        },
+        {
+          "pergunta": "Café em grão dura mais que café moído?",
+          "resposta": "Sim, bem mais. O grão inteiro tem menos área exposta ao ar, então perde aroma mais devagar. Moer na hora de usar é o que mais preserva o sabor, se você tiver um moedor em casa."
+        },
+        {
+          "pergunta": "Dá pra saber se o café moído ainda está bom só pelo cheiro?",
+          "resposta": "Dá uma boa noção: café fresco tem aroma forte assim que o pote abre. Se o cheiro estiver fraco ou quase neutro, o café ainda pode ser usado, mas o resultado na xícara vai ser mais sutil."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/moedor-de-cafe/",
+        "label": "moedor de café"
+      }
     }
   ]
 }
