@@ -1235,6 +1235,95 @@
         "href": "/moedor-de-cafe/",
         "label": "moedor de café"
       }
+    },
+    {
+      "slug": "cafeteira-italiana-ou-de-filtro-qual-escolher",
+      "titulo": "Cafeteira italiana ou de filtro: qual escolher",
+      "resumo": "A diferença real de sabor, força e trabalho entre a cafeteira italiana (moka) e a de filtro elétrica, pra escolher pelo seu dia a dia.",
+      "imagem": "/images/blog/cafeteira-italiana-ou-de-filtro-qual-escolher.jpg",
+      "dataPublicacao": "2026-11-03",
+      "corpo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "As duas fazem café bom, mas o resultado e a rotina em volta de cada uma são bem diferentes. A escolha certa depende mais de quanto café você bebe de uma vez e quanto tempo quer gastar no preparo do que de qual delas é \"melhor\"."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Cafeteira italiana (moka)"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Café mais forte e encorpado, parecido com um expresso mais leve",
+            "Precisa de atenção no fogo: deixar passar do ponto queima o café rapidamente",
+            "Rende pouco de uma vez, boa pra 1 ou 2 pessoas por preparo",
+            "Não usa energia elétrica, só o fogão"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Cafeteira de filtro elétrica"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "Café mais suave e menos concentrado que o da moka",
+            "Automática: liga, espera e o café fica pronto sem precisar ficar de olho",
+            "Rende mais de uma vez, melhor pra casa com mais gente bebendo café",
+            "Algumas têm timer, então dá pra programar pra já estar pronta de manhã"
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Se o que importa é força de café"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "A moka sai na frente em concentração de sabor, sem precisar de nenhum ajuste especial. Na cafeteira de filtro, pra chegar perto dessa força, é preciso aumentar a quantidade de pó por xícara, o que também aumenta o consumo de café."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Se o que importa é praticidade no dia a dia corrido"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "A cafeteira de filtro ganha aqui: você liga e faz outra coisa enquanto o café passa. A moka exige ficar por perto controlando o fogo, porque o ponto de retirar do fogo é rápido e fácil de errar."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Durabilidade e manutenção"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "A moka, sendo toda de metal e sem parte eletrônica, tende a durar muitos anos com pouca manutenção, desde que a vedação de borracha seja trocada quando ressecar. A cafeteira elétrica depende de resistência e componentes eletrônicos, que podem falhar depois de alguns anos de uso intenso, mesmo com boa limpeza."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Preço de compra não é a única conta"
+        },
+        {
+          "tipo": "paragrafo",
+          "texto": "A moka costuma custar menos na compra e não gasta energia elétrica, só o gás ou a eletricidade do fogão que você já usaria de qualquer forma. A cafeteira elétrica, além do preço de compra, tem o consumo de energia do dia a dia, embora seja um valor pequeno comparado ao restante do consumo da casa."
+        }
+      ],
+      "faq": [
+        {
+          "pergunta": "A cafeteira italiana faz café tipo expresso de verdade?",
+          "resposta": "Não exatamente. Ela produz um café forte e concentrado, mas sem a pressão que a máquina de expresso de verdade usa, então o resultado é parecido, não idêntico ao expresso de cafeteria."
+        },
+        {
+          "pergunta": "Preciso de um pó de café diferente pra cada uma?",
+          "resposta": "O ideal é moagem mais fina pra moka e mais média pra cafeteira de filtro. Usar a moagem errada em cada uma pode deixar o café mais amargo (moagem fina demais no filtro) ou mais fraco (moagem grossa demais na moka)."
+        },
+        {
+          "pergunta": "Vale a pena ter as duas em casa?",
+          "resposta": "Faz sentido pra quem varia entre café forte pra um momento específico e café do dia a dia pra várias pessoas. Se o uso é sempre igual, uma cafeteira só, bem escolhida pro seu padrão de consumo, já resolve."
+        }
+      ],
+      "pilarRelacionado": {
+        "href": "/cafeteira/",
+        "label": "cafeteira elétrica"
+      }
     }
   ]
 }
